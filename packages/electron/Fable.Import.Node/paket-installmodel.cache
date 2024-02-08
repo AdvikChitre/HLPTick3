@@ -1,0 +1,15 @@
+D: /_rels
+F: /_rels/.rels
+D: /lib
+D: /lib/netstandard2.0
+F: /lib/netstandard2.0/Fable.Import.Node.dll
+F: /lib/netstandard2.0/Fable.Import.Node.xml
+D: /package
+D: /package/services
+D: /package/services/metadata
+D: /package/services/metadata/core-properties
+F: /package/services/metadata/core-properties/5cc695460fa1499b93b85dee9a594f5f.psmdcp
+F: /[Content_Types].xml
+F: /fable.import.node.0.4.3.nupkg
+F: /Fable.Import.Node.nuspec
+F: /.signature.p7s

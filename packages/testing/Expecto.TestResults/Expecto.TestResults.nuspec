@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Expecto.TestResults</id>
+    <version>8.13.2</version>
+    <authors>Henrik Feldt and contributors</authors>
+    <owners>Henrik Feldt and contributors</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/haf/expecto/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/haf/expecto</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/haf/expecto/master/docs/expecto-logo-small.png</iconUrl>
+    <description>Advanced testing library for F#</description>
+    <releaseNotes>Bump dependencies thanks @MNie</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>test testing fsharp assert expect stress performance unit random property</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Expecto" version="8.13.2" exclude="Build,Analyzers" />
+        <dependency id="FSharp.Core" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Expecto" version="8.13.2" exclude="Build,Analyzers" />
+        <dependency id="FSharp.Core" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>FSharp.Data</id>
+    <version>4.2.9</version>
+    <authors>Tomas Petricek;Gustavo Guerra;Colin Bull;fsprojects contributors</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>logo.png</icon>
+    <projectUrl>https://fsprojects.github.io/FSharp.Data/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/fsprojects/FSharp.Data/master/docs/img/logo.png</iconUrl>
+    <description>The FSharp.Data package contains type providers and utilities to access
+  common data formats (CSV, HTML, JSON and XML in your F# applications and scripts. It also
+  contains  helpers for parsing CSV, HTML and JSON files and for sending HTTP requests.</description>
+    <releaseNotes>Typo fix, the parameter is plural ("Separators") by @nhirschey in https://github.com/fsprojects/FSharp.Data/pull/1433
+Typo fix, the parameter is plural ("Separators"). by @kleink in https://github.com/fsprojects/FSharp.Data/pull/1438
+Remove restrictions for getting innerText by @LiteracyFanatic in https://github.com/fsprojects/FSharp.Data/pull/1435
+pre-clean some code before applying fantomas by @dsyme in https://github.com/fsprojects/FSharp.Data/pull/1442
+update to .net 6 by @dsyme in https://github.com/fsprojects/FSharp.Data/pull/1443
+Format all code by @nojaf in https://github.com/fsprojects/FSharp.Data/pull/1441
+formatting: wider lists by @dsyme in https://github.com/fsprojects/FSharp.Data/pull/1444
+fix docs by @dsyme in https://github.com/fsprojects/FSharp.Data/pull/1446
+add GithubActionsTestLogger and use it in CI builds by @baronfel in https://github.com/fsprojects/FSharp.Data/pull/1449
+Skip json comments by @mlaily in https://github.com/fsprojects/FSharp.Data/pull/1448
+Some medium refactoring and little fixes by @mlaily in https://github.com/fsprojects/FSharp.Data/pull/1450
+Fix http tests by @mlaily in https://github.com/fsprojects/FSharp.Data/pull/1451</releaseNotes>
+    <tags>F# fsharp data typeprovider WorldBank CSV HTML CSS JSON XML HTTP linqpad-samples</tags>
+    <repository type="git" url="https://github.com/fsprojects/FSharp.Data" commit="6757c40cbd074cb27d227720ef3ad729fe22c2bd" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="5.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

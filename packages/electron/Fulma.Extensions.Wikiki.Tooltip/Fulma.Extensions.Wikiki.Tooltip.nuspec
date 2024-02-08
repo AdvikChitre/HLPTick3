@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Fulma.Extensions.Wikiki.Tooltip</id>
+    <version>3.0.0</version>
+    <authors>Maxime Mangel</authors>
+    <owners>Maxime Mangel</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/MangelMaxime/Fulma/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/MangelMaxime/Fulma</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/MangelMaxime/Fulma/master/docs/public/assets/logo-128x128.png</iconUrl>
+    <description>Helpers around bulma-tooltip for Elmish apps</description>
+    <releaseNotes>Upgrade to `bulma-tooltip@3.0.2` (no API changes from Fulma perspective only re-mapping the classes) (by @kerams)</releaseNotes>
+    <tags>fable elm fsharp bulma</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Fulma" version="2.3.0" exclude="Build,Analyzers" />
+        <dependency id="Fable.Core" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Fable.React" version="5.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

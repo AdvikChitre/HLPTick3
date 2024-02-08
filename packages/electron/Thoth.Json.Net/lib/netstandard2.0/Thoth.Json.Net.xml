@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Thoth.Json.Net</name></assembly>
+<members>
+<member name="M:Thoth.Json.Net.Decode.Auto.generateDecoderCached``1(Microsoft.FSharp.Core.FSharpOption{Thoth.Json.Net.CaseStrategy},Microsoft.FSharp.Core.FSharpOption{Thoth.Json.Net.ExtraCoders})">
+<summary>
+ ATTENTION: Use this only when other arguments (isCamelCase, extra) don&apos;t change
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Decode.andMap``2">
+ <summary>
+ Allow to incrementally apply a decoder, for building large objects.
+ </summary>
+ <example>
+ <code lang="fsharp">
+ type Point =
+     {
+         X : float
+         Y : float
+     }
+
+ module Point =
+     let create x y = { X = x; Y = y }
+
+     let decode =
+         Decode.succeed create
+             |> Decode.andMap (Decode.field "x" Decode.float)
+             |> Decode.andMap (Decode.field "y" Decode.float)
+ </code>
+ </example>
+</member>
+<member name="M:Thoth.Json.Net.Decode.datetimeLocal(System.String,Newtonsoft.Json.Linq.JToken)">
+<summary>
+ Decode a System.DateTime with DateTime.TryParse; uses default System.DateTimeStyles.
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Decode.datetimeUtc(System.String,Newtonsoft.Json.Linq.JToken)">
+<summary>
+ Decode a System.DateTime value using Sytem.DateTime.TryParse, then convert it to UTC.
+</summary>
+</member>
+<member name="P:Thoth.Json.Net.Decode.byte">
+<summary>
+ Alias to Decode.uint8
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Decode.unsafeFromString``1(Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{Newtonsoft.Json.Linq.JToken,Microsoft.FSharp.Core.FSharpResult{``0,System.Tuple{System.String,Thoth.Json.Net.ErrorReason}}}},System.String)">
+ <summary>
+ Parse the provided string in as JSON and then run the decoder against it.
+ </summary>
+ <param name="decoder">Decoder to apply</param>
+ <param name="value">JSON string to decode</param>
+ <returns>
+ Return the decoded value if the decoder succeeds, otherwise throws an exception.
+ </returns>
+</member>
+<member name="M:Thoth.Json.Net.Decode.fromString``1(Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{Newtonsoft.Json.Linq.JToken,Microsoft.FSharp.Core.FSharpResult{``0,System.Tuple{System.String,Thoth.Json.Net.ErrorReason}}}},System.String)">
+ <summary>
+ Parse the provided string in as JSON and then run the decoder against it.
+ </summary>
+ <param name="decoder">Decoder to apply</param>
+ <param name="value">JSON string to decode</param>
+ <returns>
+ Returns <c>Ok</c> if the decoder succeeds, otherwise <c>Error</c> with the error message.
+ </returns>
+</member>
+<member name="M:Thoth.Json.Net.Decode.fromValue``1(System.String,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{Newtonsoft.Json.Linq.JToken,Microsoft.FSharp.Core.FSharpResult{``0,System.Tuple{System.String,Thoth.Json.Net.ErrorReason}}}},Newtonsoft.Json.Linq.JToken)">
+ <summary>
+ Runs the decoder against the given JSON value.
+
+ If the decoder fails, it reports the error prefixed with the given path.
+
+ </summary>
+ <example>
+ <code lang="fsharp">
+ module Decode =
+     let fromRootValue (decoder : Decoder&lt;'T&gt;) =
+         Decode.fromValue "$" decoder
+ </code>
+ </example>
+ <param name="path">Path used to report the error</param>
+ <param name="decoder">Decoder to apply</param>
+ <param name="value">JSON value to decoder</param>
+ <returns>
+ Returns <c>Ok</c> if the decoder succeeds, otherwise <c>Error</c> with the error message.
+ </returns>
+</member>
+<member name="M:Thoth.Json.Net.Decode.AutoModule.LowLevel.generateDecoderCached``1(System.Type,Microsoft.FSharp.Core.FSharpOption{Thoth.Json.Net.CaseStrategy},Microsoft.FSharp.Core.FSharpOption{Thoth.Json.Net.ExtraCoders})">
+<summary>
+ ATTENTION: Use this only when other arguments (isCamelCase, extra) don&apos;t change
+</summary>
+</member>
+<member name="T:Thoth.Json.Net.Decode.AutoModule.LowLevel">
+<summary>
+ This API  is only implemented inside Thoth.Json.Net for now
+ The goal of this API is to provide better interop when consuming Thoth.Json.Net from a C# project
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.Auto.generateEncoderCached``1(Microsoft.FSharp.Core.FSharpOption{Thoth.Json.Net.CaseStrategy},Microsoft.FSharp.Core.FSharpOption{Thoth.Json.Net.ExtraCoders},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ ATTENTION: Use this only when other arguments (caseStrategy, extra) don&apos;t change
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.option``1(Microsoft.FSharp.Core.FSharpFunc{``0,Newtonsoft.Json.Linq.JToken})">
+<summary>
+**Description**
+ Encode an option
+**Parameters**
+  * `encoder` - parameter of type `&apos;a -&gt; Value`
+
+**Output Type**
+  * `&apos;a option -&gt; Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.encode(System.Int32,Newtonsoft.Json.Linq.JToken)">
+<summary>
+**Description**
+ Convert a `Value` into a prettified string.
+**Parameters**
+  * `space` - parameter of type `int` - Amount of indentation
+  * `value` - parameter of type `obj` - Value to convert
+
+**Output Type**
+  * `string`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.toString(System.Int32,Newtonsoft.Json.Linq.JToken)">
+<summary>
+**Description**
+ Convert a `Value` into a prettified string.
+**Parameters**
+  * `space` - parameter of type `int` - Amount of indentation
+  * `value` - parameter of type `obj` - Value to convert
+
+**Output Type**
+  * `string`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.datetimeOffset(System.DateTimeOffset)">
+<summary>
+ The DateTime is always encoded using UTC representation
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.dict(Microsoft.FSharp.Collections.FSharpMap{System.String,Newtonsoft.Json.Linq.JToken})">
+<summary>
+**Description**
+ Encode a dictionary
+**Parameters**
+  * `values` - parameter of type `Map&lt;string, Value&gt;`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.list(Microsoft.FSharp.Collections.FSharpList{Newtonsoft.Json.Linq.JToken})">
+<summary>
+**Description**
+ Encode a list
+**Parameters**
+  * `values` - parameter of type `Value list`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.array(Newtonsoft.Json.Linq.JToken[])">
+<summary>
+**Description**
+ Encode an array
+
+**Parameters**
+  * `values` - parameter of type `Value array`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.object(Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.String,Newtonsoft.Json.Linq.JToken}})">
+<summary>
+**Description**
+ Encode an object
+
+**Parameters**
+  * `values` - parameter of type `(string * Value) list`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.bool(System.Boolean)">
+<summary>
+**Description**
+ Encode a bool
+**Parameters**
+  * `value` - parameter of type `bool`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="P:Thoth.Json.Net.Encode.nil">
+<summary>
+**Description**
+ Encode null
+
+**Parameters**
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.decimal(System.Decimal)">
+<summary>
+**Description**
+ Encode a Decimal.
+
+**Parameters**
+  * `value` - parameter of type `decimal`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.float(System.Double)">
+<summary>
+**Description**
+ Encode a Float. `Infinity` and `NaN` are encoded as `null`.
+
+**Parameters**
+  * `value` - parameter of type `float`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.guid(System.Guid)">
+<summary>
+**Description**
+ Encode a GUID
+
+**Parameters**
+  * `value` - parameter of type `System.Guid`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.string(System.String)">
+<summary>
+**Description**
+ Encode a string
+
+**Parameters**
+  * `value` - parameter of type `string`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Net.Encode.AutoModule.LowLevel.generateEncoderCached``1(System.Type,Microsoft.FSharp.Core.FSharpOption{Thoth.Json.Net.CaseStrategy},Microsoft.FSharp.Core.FSharpOption{Thoth.Json.Net.ExtraCoders},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ ATTENTION: Use this only when other arguments (isCamelCase, extra) don&apos;t change
+</summary>
+</member>
+<member name="T:Thoth.Json.Net.Encode.AutoModule.LowLevel">
+<summary>
+ This API  is only implemented inside Thoth.Json.Net for now
+ The goal of this API is to provide better interop when consuming Thoth.Json.Net from a C# project
+</summary>
+</member>
+</members>
+</doc>

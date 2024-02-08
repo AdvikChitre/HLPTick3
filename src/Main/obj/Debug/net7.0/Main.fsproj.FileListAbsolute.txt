@@ -1,0 +1,6 @@
+/Users/advik/Documents/imperial/HLP/issie/src/Main/bin/Debug/net7.0/Main.deps.json
+/Users/advik/Documents/imperial/HLP/issie/src/Main/obj/Debug/net7.0/Main.AssemblyInfoInputs.cache
+/Users/advik/Documents/imperial/HLP/issie/src/Main/obj/Debug/net7.0/Main.AssemblyInfo.fs
+/Users/advik/Documents/imperial/HLP/issie/src/Main/obj/Debug/net7.0/Main.dll
+/Users/advik/Documents/imperial/HLP/issie/src/Main/obj/Debug/net7.0/refint/Main.dll
+/Users/advik/Documents/imperial/HLP/issie/src/Main/obj/Debug/net7.0/Main.pdb

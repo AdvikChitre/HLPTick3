@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Thoth.Json</name></assembly>
+<members>
+<member name="P:Thoth.Json.Decode.byte">
+<summary>
+ Alias to Decode.uint8
+</summary>
+</member>
+<member name="M:Thoth.Json.Decode.Helpers.isIntegralValue(System.Object)">
+<summary>
+ is the value an integer? This returns false for 1.1, NaN, Infinite, ...
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.encode(System.Int32,System.Object)">
+<summary>
+**Description**
+ Convert a `Value` into a prettified string.
+**Parameters**
+  * `space` - parameter of type `int` - Amount of indentation
+  * `value` - parameter of type `obj` - Value to convert
+
+**Output Type**
+  * `string`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.option``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Object})">
+<summary>
+**Description**
+ Encode an option
+**Parameters**
+  * `encoder` - parameter of type `&apos;a -&gt; Value`
+
+**Output Type**
+  * `&apos;a option -&gt; Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.toString(System.Int32,System.Object)">
+<summary>
+**Description**
+ Convert a `Value` into a prettified string.
+**Parameters**
+  * `space` - parameter of type `int` - Amount of indentation
+  * `value` - parameter of type `obj` - Value to convert
+
+**Output Type**
+  * `string`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.datetime(System.DateTime)">
+<summary>
+ **Description**
+
+ The DateTime is always encoded using UTC representation
+
+ **Parameters**
+   * `value` - parameter of type `System.DateTime`
+
+ **Output Type**
+   * `Value`
+
+ **Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.timespan(System.TimeSpan)">
+<summary>
+ **Description**
+ Encode a timespan
+ **Parameters**
+   * `value` - parameter of type `System.TimeSpan`
+
+ **Output Type**
+   * `Value`
+
+ **Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.dict(Microsoft.FSharp.Collections.FSharpMap{System.String,System.Object})">
+<summary>
+**Description**
+ Encode a dictionary
+**Parameters**
+  * `values` - parameter of type `Map&lt;string, Value&gt;`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.list(Microsoft.FSharp.Collections.FSharpList{System.Object})">
+<summary>
+**Description**
+ Encode a list
+**Parameters**
+  * `values` - parameter of type `Value list`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.array(System.Object[])">
+<summary>
+**Description**
+ Encode an array
+
+**Parameters**
+  * `values` - parameter of type `Value array`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.object(System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.Object}})">
+<summary>
+**Description**
+ Encode an object
+
+**Parameters**
+  * `values` - parameter of type `(string * Value) list`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.bool(System.Boolean)">
+<summary>
+**Description**
+ Encode a bool
+**Parameters**
+  * `value` - parameter of type `bool`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="P:Thoth.Json.Encode.nil">
+<summary>
+**Description**
+ Encode null
+
+**Parameters**
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.decimal(System.Decimal)">
+<summary>
+**Description**
+ Encode a Decimal.
+
+**Parameters**
+  * `value` - parameter of type `decimal`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.float(System.Double)">
+<summary>
+**Description**
+ Encode a Float. `Infinity` and `NaN` are encoded as `null`.
+
+**Parameters**
+  * `value` - parameter of type `float`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.guid(System.Guid)">
+<summary>
+**Description**
+ Encode a GUID
+
+**Parameters**
+  * `value` - parameter of type `System.Guid`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+<member name="M:Thoth.Json.Encode.string(System.String)">
+<summary>
+**Description**
+ Encode a string
+
+**Parameters**
+  * `value` - parameter of type `string`
+
+**Output Type**
+  * `Value`
+
+**Exceptions**
+
+</summary>
+</member>
+</members>
+</doc>

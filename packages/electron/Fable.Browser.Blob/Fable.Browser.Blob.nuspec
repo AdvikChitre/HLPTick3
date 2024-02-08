@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Fable.Browser.Blob</id>
+    <version>1.2.0</version>
+    <authors>Fable contributors</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>fable_logo.png</icon>
+    <projectUrl>http://fable.io/</projectUrl>
+    <description>Package Description</description>
+    <tags>fsharp fable javascript f# js</tags>
+    <repository type="git" url="https://github.com/fable-compiler/fable-browser.git" commit="d9683a748166aeb95ba59e2a6da7454d459be729" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.7.2" exclude="Build,Analyzers" />
+        <dependency id="Fable.Core" version="3.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

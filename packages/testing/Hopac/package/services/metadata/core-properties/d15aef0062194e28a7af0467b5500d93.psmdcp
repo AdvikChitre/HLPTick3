@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>Vesa Karvonen</dc:creator>
+  <dc:description>Hopac is a library for higher-Order, parallel, asynchronous and concurrent programming in F#.
+
+Inspired by languages like Concurrent ML and Cilk, Hopac is a library for F# with the aim of making it easier to write efficient parallel, asynchronous, concurrent and reactive programs. Hopac is licensed under a MIT-style license. See project website for further information.</dc:description>
+  <dc:identifier>Hopac</dc:identifier>
+  <version>0.5.1</version>
+  <keywords>F# documentation fsi html</keywords>
+  <lastModifiedBy>NuGet.Build.Tasks.Pack, Version=5.10.0.7240, Culture=neutral, PublicKeyToken=31bf3856ad364e35;</lastModifiedBy>
+</coreProperties>

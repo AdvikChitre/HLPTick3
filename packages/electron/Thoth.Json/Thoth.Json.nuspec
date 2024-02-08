@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Thoth.Json</id>
+    <version>7.0.0</version>
+    <authors>Maxime Mangel</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/thoth-org/Thoth.Json</projectUrl>
+    <description>Elm-inspired encoder and decoder for JSON, this package is intended to be use on Fable side only.
+
+If you are interested on using it against .NET Core or .NET Framework, please use Thoth.Json.Net.</description>
+    <tags>fable fsharp json</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.7.2" exclude="Build,Analyzers" />
+        <dependency id="Fable.Core" version="3.1.6" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["./TestWorker.fs"],"names":["start","msg","enumerator","i","a","testFn"],"mappings":";;;;;;AAKQA,kBAAQ;AACZ,QAAG,AAAAC,aAAW;AACDC,2BAAA,cAAA,OAAC,YAAA,MAAG;AAAb;AAAA,mBAAS,AAAAA;AAALC,0BAAK,AAAAD;mBACL,AAAAC,IAAE;;;;AADN,wBAASD;;;;AAGT;;AAEJE,cAAgB,AAAC,YAAwBJ,SAAO;AAAhD,qBAAAI;AACA,WAAA;;;AAGJ,aAAkBC","file":null,"sourcesContent":null,"sourceRoot":null}

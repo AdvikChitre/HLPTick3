@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Fable.Core</id>
+    <version>3.7.1</version>
+    <authors>Alfonso García-Caro Núñez</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>fable_logo.png</icon>
+    <projectUrl>http://fable.io/</projectUrl>
+    <description>Fable Core Library</description>
+    <tags>fsharp fable javascript f# js</tags>
+    <repository type="git" url="https://github.com/fable-compiler/Fable.git" commit="6916fbc47e17a07bfb8a1e7c781a10cc583b3f35" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

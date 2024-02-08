@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Fable.Electron</id>
+    <version>6.0.0</version>
+    <authors>Christer van der Meeren</authors>
+    <owners>Christer van der Meeren</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/fable-compiler/fable-electron/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/fable-compiler/fable-electron</projectUrl>
+    <description>Fable bindings and helpers for Electron.</description>
+    <releaseNotes>Updated for Electron 9.0</releaseNotes>
+    <tags>fable electron bindings</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.5.2" exclude="Build,Analyzers" />
+        <dependency id="Fable.Browser.Dom" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Fable.Core" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Fable.Node" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

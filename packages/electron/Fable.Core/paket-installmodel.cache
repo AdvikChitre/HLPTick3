@@ -1,0 +1,17 @@
+D: /_rels
+F: /_rels/.rels
+D: /lib
+D: /lib/netstandard2.0
+F: /lib/netstandard2.0/Fable.Core.dll
+F: /lib/netstandard2.0/Fable.Core.xml
+D: /package
+D: /package/services
+D: /package/services/metadata
+D: /package/services/metadata/core-properties
+F: /package/services/metadata/core-properties/584e06a816f841d2ab159751b2447e2e.psmdcp
+F: /[Content_Types].xml
+F: /LICENSE
+F: /fable.core.3.7.1.nupkg
+F: /Fable.Core.nuspec
+F: /fable_logo.png
+F: /.signature.p7s

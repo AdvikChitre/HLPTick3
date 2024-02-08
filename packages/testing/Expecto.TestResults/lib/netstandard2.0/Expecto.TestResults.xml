@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Expecto.TestResults</name></assembly>
+<members>
+<member name="M:Expecto.TestResults.writeJUnitSummary``1(System.String,``0,System.Boolean,Expecto.Impl.TestRunSummary)">
+<summary>
+ If using this with gitlab, set the third parameter &apos;handleErrorsLikeFailures&apos; to true.
+</summary>
+</member>
+<member name="M:Expecto.TestResults.writeNUnitSummary``1(System.String,``0,Expecto.Impl.TestRunSummary)">
+<summary>
+ Generate test results using NUnit v2 schema.
+</summary>
+</member>
+<member name="M:Expecto.CSharp.ConfigExt.AddJUnitSummary(Expecto.Impl.ExpectoConfig,System.String,System.String,System.Boolean)">
+<summary>
+ If using this with gitlab, set the third parameter &apos;handleErrorsLikeFailures&apos; to true.
+</summary>
+</member>
+</members>
+</doc>

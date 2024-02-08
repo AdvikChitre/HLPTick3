@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Foq</id>
+    <version>1.8.0</version>
+    <authors>Phillip Trelford</authors>
+    <owners>Phillip Trelford</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/fsprojects/Foq/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>http://foq.codeplex.com/</projectUrl>
+    <iconUrl>http://trelford.com/Foq.png</iconUrl>
+    <description>Foq is a lightweight thread-safe mocking library for F#, C#, and VB with a similar API to Moq.</description>
+    <releaseNotes>Support for .NET Core/.NET Standard 2.0</releaseNotes>
+    <copyright>Copyright 2012-2018</copyright>
+    <tags>F# C# VB testing unittest unittesting TDD stubs stubbing fakes faking mocks mocking moq</tags>
+    <repository type="git" url="https://github.com/fsprojects/Foq" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="FSharp.Core" version="3.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.3.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="FSharp.Core" version="3.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.3.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.2.3" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

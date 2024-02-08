@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Expecto.FsCheck</id>
+    <version>9.0.4</version>
+    <authors>Henrik Feldt and contributors</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>expecto-logo-small.png</icon>
+    <projectUrl>https://github.com/haf/expecto</projectUrl>
+    <description>Property testing for Expecto, powered by FsCheck</description>
+    <releaseNotes>Thanks @lydell for improving Expecto.Diff</releaseNotes>
+    <copyright>Copyright 2020 Authors &amp; contributors</copyright>
+    <tags>test testing fsharp assert expect stress performance unit random property</tags>
+    <repository type="git" url="https://github.com/haf/expecto.git" commit="7a98f834288b82b671db23b92450f5a9ef603166" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Expecto" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="FsCheck" version="2.14.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Expecto" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="FsCheck" version="2.14.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>iced project and contributors &lt;https://github.com/icedland&gt;</dc:creator>
+  <dc:description>iced is a blazing fast and correct x86 (16/32/64-bit) instruction decoder, disassembler and assembler written in C#.
+
+- 👍 Supports all Intel and AMD instructions
+- 👍 Correct: All instructions are tested and iced has been tested against other disassemblers/assemblers (xed, gas, objdump, masm, dumpbin, nasm, ndisasm) and fuzzed
+- 👍 100% C# code
+- 👍 The formatter supports masm, nasm, gas (AT&amp;T), Intel (XED) and there are many options to customize the output
+- 👍 The decoder is 2x+ faster than other similar libraries and doesn't allocate any memory
+- 👍 Small decoded instructions, only 32 bytes
+- 👍 Create instructions with code assembler, eg. `asm.mov(eax, edx)`
+- 👍 The encoder can be used to re-encode decoded instructions at any address
+- 👍 API to get instruction info, eg. read/written registers, memory and rflags bits; CPUID feature flag, control flow info, etc
+- 👍 Supports `.NET Standard 2.0/2.1+` and `.NET Framework 4.5+`
+- 👍 License: MIT</dc:description>
+  <dc:identifier>Iced</dc:identifier>
+  <version>1.17.0</version>
+  <keywords>disassembler x86 x64 assembler encoder decoder formatter</keywords>
+  <lastModifiedBy>NuGet.Build.Tasks.Pack, Version=6.0.0.278, Culture=neutral, PublicKeyToken=31bf3856ad364e35;</lastModifiedBy>
+</coreProperties>

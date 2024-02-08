@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Browser.Svg</name></assembly>
+<members>
+<member name="M:Browser.SvgExtensions.Document.set_rootElement(Browser.Types.Document,Browser.Types.SVGSVGElement)">
+<summary>
+ Gets the root svg element in the document hierarchy.
+</summary>
+</member>
+<member name="M:Browser.SvgExtensions.Document.get_rootElement(Browser.Types.Document)">
+<summary>
+ Gets the root svg element in the document hierarchy.
+</summary>
+</member>
+</members>
+</doc>

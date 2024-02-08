@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Fable.Promise</id>
+    <version>3.1.3</version>
+    <authors>Fable contributors</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>fable_logo.png</icon>
+    <projectUrl>https://fable.io/</projectUrl>
+    <description>Package Description</description>
+    <tags>fsharp fable javascript f# js</tags>
+    <repository type="git" url="https://github.com/fable-compiler/fable-promise" commit="2b903a2c32f41a11ac21f70e26b79d83b6c2ce69" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.7.2" exclude="Build,Analyzers" />
+        <dependency id="Fable.Core" version="3.1.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

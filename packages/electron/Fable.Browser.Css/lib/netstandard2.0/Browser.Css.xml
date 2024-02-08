@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Browser.Css</name></assembly>
+<members>
+<member name="M:Browser.Types.CSSStyleSheet.replaceSync(System.String)">
+ <summary>
+ synchronously replaces the content of the stylesheet with the content passed into it.
+ </summary>
+ <remarks>
+ The replaceSync() and CSSStyleSheet.replace() methods can only be used on a stylesheet created with the CSSStyleSheet() constructor.
+ </remarks>
+</member>
+<member name="M:Browser.Types.CSSStyleSheet.replace(System.String)">
+ <summary>
+ replaces the content of the stylesheet with the content passed into it.
+ The method returns a promise that resolves with a CSSStyleSheet object.
+ </summary>
+ <remarks>
+ The replaceSync() and CSSStyleSheet.replace() methods can only be used on a stylesheet created with the CSSStyleSheet() constructor.
+ </remarks>
+</member>
+<member name="T:Browser.Types.CSSMediaRuleType">
+<summary>
+ TODO
+</summary>
+</member>
+<member name="M:Browser.CssExtensions.Document.set_styleSheets(Browser.Types.Document,Browser.Types.StyleSheetList)">
+<summary>
+ Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
+</summary>
+</member>
+<member name="M:Browser.CssExtensions.Document.get_styleSheets(Browser.Types.Document)">
+<summary>
+ Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
+</summary>
+</member>
+<member name="M:Browser.CssExtensions.Document.set_adoptedStyleSheets(Browser.Types.Document,Browser.Types.CSSStyleSheet[])">
+<summary>
+ returns this DocumentOrShadowRoot adopted stylesheets or sets them.
+ https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets
+</summary>
+</member>
+<member name="M:Browser.CssExtensions.Document.get_adoptedStyleSheets(Browser.Types.Document)">
+<summary>
+ returns this DocumentOrShadowRoot adopted stylesheets or sets them.
+ https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets
+</summary>
+</member>
+<member name="M:Browser.CssExtensions.ShadowRoot.get_styleSheets(Browser.Types.ShadowRoot)">
+<summary>
+ Returns a StyleSheetList of CSSStyleSheet objects for stylesheets explicitly linked into, or embedded in a shadow tree.
+</summary>
+</member>
+<member name="M:Browser.CssExtensions.Element.set_adoptedStyleSheets(Browser.Types.Element,Browser.Types.CSSStyleSheet[])">
+<summary>
+ returns this DocumentOrShadow adopted stylesheets or sets them.
+ https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets
+</summary>
+</member>
+<member name="M:Browser.CssExtensions.Element.get_adoptedStyleSheets(Browser.Types.Element)">
+<summary>
+ returns this DocumentOrShadow adopted stylesheets or sets them.
+ https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets
+</summary>
+</member>
+</members>
+</doc>

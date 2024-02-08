@@ -1,0 +1,2092 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Fulma</name></assembly>
+<members>
+<member name="M:Fulma.Common.GenericOptions.ToReactElement(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Fable.React.Props.IHTMLProp},Fable.React.ReactElement})">
+<summary>
+ Convert to self closing element
+</summary>
+</member>
+<member name="M:Fulma.Common.GenericOptions.ToReactElement(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Fable.React.Props.IHTMLProp},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement},Fable.React.ReactElement}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement}})">
+<summary>
+ Convert to standard element
+</summary>
+</member>
+<member name="T:Fulma.TextTransform.Option.Underlined">
+<summary>
+ Add `is-underlined`
+</summary>
+</member>
+<member name="T:Fulma.TextTransform.Option.Italic">
+<summary>
+ Add `is-italic`
+</summary>
+</member>
+<member name="T:Fulma.TextTransform.Option.UpperCase">
+<summary>
+ Add `is-uppercase`
+</summary>
+</member>
+<member name="T:Fulma.TextTransform.Option.LowerCase">
+<summary>
+ Add `is-lowercase`
+</summary>
+</member>
+<member name="T:Fulma.TextTransform.Option.Capitalized">
+<summary>
+ Add `is-capitalized`
+</summary>
+</member>
+<member name="T:Fulma.TextWeight.Option.Medium">
+<summary>
+ Add `has-text-weight-medium`
+</summary>
+</member>
+<member name="T:Fulma.TextWeight.Option.Bold">
+<summary>
+ Add `has-text-weight-bold`
+</summary>
+</member>
+<member name="T:Fulma.TextWeight.Option.SemiBold">
+<summary>
+ Add `has-text-weight-semibold`
+</summary>
+</member>
+<member name="T:Fulma.TextWeight.Option.Normal">
+<summary>
+ Add `has-text-weight-normal`
+</summary>
+</member>
+<member name="T:Fulma.TextWeight.Option.Light">
+<summary>
+ Add `has-text-weight-light`
+</summary>
+</member>
+<member name="T:Fulma.FlexShrink.Option.Is5">
+ <summary>Add <c>is-flex-shrink-5</c></summary>
+</member>
+<member name="T:Fulma.FlexShrink.Option.Is4">
+ <summary>Add <c>is-flex-shrink-4</c></summary>
+</member>
+<member name="T:Fulma.FlexShrink.Option.Is3">
+ <summary>Add <c>is-flex-shrink-3</c></summary>
+</member>
+<member name="T:Fulma.FlexShrink.Option.Is2">
+ <summary>Add <c>is-flex-shrink-2</c></summary>
+</member>
+<member name="T:Fulma.FlexShrink.Option.Is1">
+ <summary>Add <c>is-flex-shrink-1</c></summary>
+</member>
+<member name="T:Fulma.FlexShrink.Option.Is0">
+ <summary>Add <c>is-flex-shrink-0</c></summary>
+</member>
+<member name="T:Fulma.FlexGrow.Option.Is5">
+ <summary>Add <c>is-flex-grow-5</c></summary>
+</member>
+<member name="T:Fulma.FlexGrow.Option.Is4">
+ <summary>Add <c>is-flex-grow-4</c></summary>
+</member>
+<member name="T:Fulma.FlexGrow.Option.Is3">
+ <summary>Add <c>is-flex-grow-3</c></summary>
+</member>
+<member name="T:Fulma.FlexGrow.Option.Is2">
+ <summary>Add <c>is-flex-grow-2</c></summary>
+</member>
+<member name="T:Fulma.FlexGrow.Option.Is1">
+ <summary>Add <c>is-flex-grow-1</c></summary>
+</member>
+<member name="T:Fulma.FlexGrow.Option.Is0">
+ <summary>Add <c>is-flex-grow-0</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignSelf.Option.Stretch">
+ <summary>Add <c>is-align-self-stretch</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignSelf.Option.Baseline">
+ <summary>Add <c>is-align-self-baseline</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignSelf.Option.Center">
+ <summary>Add <c>is-align-self-center</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignSelf.Option.FlexEnd">
+ <summary>Add <c>is-align-self-flex-end</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignSelf.Option.FlexStart">
+ <summary>Add <c>is-align-self-flex-start</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignSelf.Option.Auto">
+ <summary>Add <c>is-align-self-auto</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.SelfEnd">
+ <summary>Add <c>is-align-items-self-end</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.SelfStart">
+ <summary>Add <c>is-align-items-self-start</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.End">
+ <summary>Add <c>is-align-items-end</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.Start">
+ <summary>Add <c>is-align-items-start</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.Baseline">
+ <summary>Add <c>is-align-items-baseline</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.Center">
+ <summary>Add <c>is-align-items-center</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.FlexEnd">
+ <summary>Add <c>is-align-items-flex-end</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.FlexStart">
+ <summary>Add <c>is-align-items-flex-start</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignItems.Option.Stretch">
+ <summary>Add <c>is-align-items-stretch</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.Baseline">
+ <summary>Add <c>is-align-content-baseline</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.End">
+ <summary>Add <c>is-align-content-end</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.Start">
+ <summary>Add <c>is-align-content-start</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.Stretch">
+ <summary>Add <c>is-align-content-stretch</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.SpaceEvenly">
+ <summary>Add <c>is-align-content-space-evenly</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.SpaceAround">
+ <summary>Add <c>is-align-content-space-around</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.SpaceBetween">
+ <summary>Add <c>is-align-content-space-between</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.Center">
+ <summary>Add <c>is-align-content-center</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.FlexEnd">
+ <summary>Add <c>is-align-content-flex-end</c></summary>
+</member>
+<member name="T:Fulma.FlexAlignContent.Option.FlexStart">
+ <summary>Add <c>is-align-content-flex-start</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.Right">
+ <summary>Add <c>is-justify-content-right</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.Left">
+ <summary>Add <c>is-justify-content-left</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.End">
+ <summary>Add <c>is-justify-content-end</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.Start">
+ <summary>Add <c>is-justify-content-start</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.SpaceEvenly">
+ <summary>Add <c>is-justify-content-space-evenly</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.SpaceAround">
+ <summary>Add <c>is-justify-content-space-around</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.SpaceBetween">
+ <summary>Add <c>is-justify-content-space-between</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.Center">
+ <summary>Add <c>is-justify-content-center</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.FlexEnd">
+ <summary>Add <c>is-justify-content-flex-end</c></summary>
+</member>
+<member name="T:Fulma.FlexJustifyContent.Option.FlexStart">
+ <summary>Add <c>is-justify-content-flex-start</c></summary>
+</member>
+<member name="T:Fulma.FlexWrap.Option.WrapReverse">
+ <summary>Add <c>is-flex-wrap-wrap-reverse</c></summary>
+</member>
+<member name="T:Fulma.FlexWrap.Option.Wrap">
+ <summary>Add <c>is-flex-wrap-wrap</c></summary>
+</member>
+<member name="T:Fulma.FlexWrap.Option.NoWrap">
+ <summary>Add <c>is-flex-wrap-nowrap</c></summary>
+</member>
+<member name="T:Fulma.FlexDirection.Option.ColumnReverse">
+ <summary>Add <c>is-flex-direction-column-reverse</c></summary>
+</member>
+<member name="T:Fulma.FlexDirection.Option.Column">
+ <summary>Add <c>is-flex-direction-column</c></summary>
+</member>
+<member name="T:Fulma.FlexDirection.Option.RowReverse">
+ <summary>Add <c>is-flex-direction-row-reverse</c></summary>
+</member>
+<member name="T:Fulma.FlexDirection.Option.Row">
+ <summary>Add <c>is-flex-direction-row</c></summary>
+</member>
+<member name="T:Fulma.TextAlignment.Option.Right">
+<summary>
+ Add `has-text-right`
+</summary>
+</member>
+<member name="T:Fulma.TextAlignment.Option.Left">
+<summary>
+ Add `has-text-left`
+</summary>
+</member>
+<member name="T:Fulma.TextAlignment.Option.Justified">
+<summary>
+ Add `has-text-justified`
+</summary>
+</member>
+<member name="T:Fulma.TextAlignment.Option.Centered">
+<summary>
+ Add `has-text-centered`
+</summary>
+</member>
+<member name="T:Fulma.Color.IColor.NoColor">
+<summary>
+ Allow you to specify a NoColor case.
+</summary>
+</member>
+<member name="T:Fulma.Color.IColor.IsCustomColor">
+<summary>
+ Allow you to specify a custom color. The color will be prefixed by &quot;is-&quot;
+</summary>
+</member>
+<member name="T:Fulma.Breadcrumb.Option.HasSucceedsSeparator">
+<summary>
+ Add `has-succeeds-separator` class
+</summary>
+</member>
+<member name="T:Fulma.Breadcrumb.Option.HasDotSeparator">
+<summary>
+ Add `has-dot-separator` class
+</summary>
+</member>
+<member name="T:Fulma.Breadcrumb.Option.HasBulletSeparator">
+<summary>
+ Add `has-bullet-separator` class
+</summary>
+</member>
+<member name="T:Fulma.Breadcrumb.Option.HasArrowSeparator">
+<summary>
+ Add `has-arrow-separator` class
+</summary>
+</member>
+<member name="T:Fulma.Breadcrumb.Option.IsRight">
+<summary>
+ Add `is-right` class
+</summary>
+</member>
+<member name="T:Fulma.Breadcrumb.Option.IsCentered">
+<summary>
+ Add `is-centered` class
+</summary>
+</member>
+<member name="M:Fulma.Breadcrumb.item(Microsoft.FSharp.Collections.FSharpList{Fulma.Breadcrumb.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;li&gt;&lt;/li&gt;
+</summary>
+</member>
+<member name="M:Fulma.Breadcrumb.breadcrumb(Microsoft.FSharp.Collections.FSharpList{Fulma.Breadcrumb.Option},System.Collections.Generic.IEnumerable{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;nav class=&quot;breadcumb&quot;&gt;&lt;/nav&gt;
+</summary>
+</member>
+<member name="T:Fulma.Breadcrumb.Item.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Card.image(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;card-image&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.footer(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;card-footer&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.content(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;card-content&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.header(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;card-header&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.card(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;card&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.Footer.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;card-footer-item&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.Footer.p(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;card-footer-item&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.Footer.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;card-footer-item&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.Header.title(Microsoft.FSharp.Collections.FSharpList{Fulma.Card.Header.Title.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;card-header-title&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="M:Fulma.Card.Header.icon(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;card-header-icon&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="T:Fulma.Card.Header.Title.Option.IsCentered">
+<summary>
+ Add `is-centered` class
+</summary>
+</member>
+<member name="T:Fulma.Dropdown.Option.IsUp">
+<summary>
+ Add `is-up` class
+</summary>
+</member>
+<member name="T:Fulma.Dropdown.Option.IsRight">
+<summary>
+ Add `is-right` class
+</summary>
+</member>
+<member name="T:Fulma.Dropdown.Option.IsHoverable">
+<summary>
+ Add `is-hoverable` class
+</summary>
+</member>
+<member name="T:Fulma.Dropdown.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Dropdown.trigger(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;dropdown-trigger&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Dropdown.divider(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption})">
+<summary>
+ Generate &lt;hr class=&quot;dropdown-divider&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Dropdown.content(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;dropdown-content&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Dropdown.menu(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;dropdown-menu&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Dropdown.dropdown(Microsoft.FSharp.Collections.FSharpList{Fulma.Dropdown.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;dropdown&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Dropdown.Item.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Dropdown.Item.button(Microsoft.FSharp.Collections.FSharpList{Fulma.Dropdown.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;button class=&quot;dropdown-item&quot;&gt;&lt;/button&gt;
+</summary>
+</member>
+<member name="M:Fulma.Dropdown.Item.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Dropdown.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;dropdown-item&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Dropdown.Item.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Dropdown.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;dropdown-item&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Media.content(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;media-content&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Media.right(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;media-right&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Media.left(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;media-left&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Media.media(Microsoft.FSharp.Collections.FSharpList{Fulma.Media.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;article class=&quot;media&quot;&gt;&lt;/article&gt;
+</summary>
+</member>
+<member name="M:Fulma.Menu.list(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;menu-list&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Menu.label(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;menu-label&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="M:Fulma.Menu.menu(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;aside class=&quot;menu&quot;&gt;&lt;/aside&gt;
+</summary>
+</member>
+<member name="T:Fulma.Menu.Item.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Menu.Item.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Menu.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Menu.Item.li(Microsoft.FSharp.Collections.FSharpList{Fulma.Menu.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;li&gt;&lt;a&gt;&lt;/a&gt;&lt;/li&gt;
+ You control the `a` element
+</summary>
+</member>
+<member name="M:Fulma.Message.body(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;message-body&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Message.header(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;message-header&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Message.message(Microsoft.FSharp.Collections.FSharpList{Fulma.Message.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;article class=&quot;message&quot;&gt;&lt;/article&gt;
+</summary>
+</member>
+<member name="T:Fulma.Modal.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Modal.content(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;modal-content&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Modal.background(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;modal-background&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Modal.close(Microsoft.FSharp.Collections.FSharpList{Fulma.Modal.Close.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;button class=&quot;modal-close&quot;&gt;&lt;/button&gt;
+</summary>
+</member>
+<member name="M:Fulma.Modal.modal(Microsoft.FSharp.Collections.FSharpList{Fulma.Modal.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;modal&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Modal.Card.body(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;modal-card-body&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Modal.Card.title(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;modal-card-title&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Modal.Card.foot(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;footer class=&quot;modal-card-foot&quot;&gt;&lt;/footer&gt;
+</summary>
+</member>
+<member name="M:Fulma.Modal.Card.head(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;header class=&quot;modal-card-head&quot;&gt;&lt;/header&gt;
+</summary>
+</member>
+<member name="M:Fulma.Modal.Card.card(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;modal-card&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Option.IsSpaced">
+<summary>
+ Add `is-spaced` class
+ Increases horizontal and vertical padding of the navbar
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Option.IsFixedBottom">
+<summary>
+ Add `is-fixed-bottom` class
+ You also need to add `has-navbar-fixed-bottom` to your html tag
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Option.IsFixedTop">
+<summary>
+ Add `is-fixed-top` class
+ You also need to add `has-navbar-fixed-top` to your html tag
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Option.IsTransparent">
+<summary>
+ Add `is-transparent` class
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Option.HasShadow">
+<summary>
+ Add `has-shadow` class
+</summary>
+</member>
+<member name="M:Fulma.Navbar.divider(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-divider&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.content(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-content&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.burger(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Burger.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-burger&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.menu(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Menu.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-menu&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.navbar(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;nav class=&quot;navbar&quot;&gt;&lt;/nav&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.End.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;navbar-end&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.End.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-end&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Start.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;navbar-start&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Start.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-start&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Brand.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;navbar-brand&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Brand.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-brand&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Dropdown.Option.IsRight">
+<summary>
+ Add `is-right` class
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Dropdown.Option.IsBoxed">
+<summary>
+ Add `is-boxed` class
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Dropdown.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Dropdown.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Dropdown.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;navbar-dropdown&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Dropdown.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Dropdown.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-dropdown&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Link.Option.IsArrowless">
+<summary>
+ Add `is-arrowless`
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Link.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Link.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Link.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;navbar-link&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Link.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Link.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-link&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Item.Option.IsExpanded">
+<summary>
+ Add `is-expanded` class
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Item.Option.HasDropdown">
+<summary>
+ Add `has-dropdown` class
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Item.Option.IsHoverable">
+<summary>
+ Add `is-hoverable` class
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Item.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Item.Option.IsTab">
+<summary>
+ Add `is-tab` class
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Item.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;navbar-item&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Navbar.Item.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Navbar.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;navbar-item&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Burger.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="T:Fulma.Navbar.Menu.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="T:Fulma.Pagination.Option.IsRounded">
+<summary>
+ Add `is-rounded` class
+</summary>
+</member>
+<member name="T:Fulma.Pagination.Option.IsRight">
+<summary>
+ Add `is-right` class
+</summary>
+</member>
+<member name="T:Fulma.Pagination.Option.IsCentered">
+<summary>
+ Add `is-centered` class
+</summary>
+</member>
+<member name="M:Fulma.Pagination.list(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;ul class=&quot;pagination-list&quot;&gt;&lt;/ul&gt;
+</summary>
+</member>
+<member name="M:Fulma.Pagination.ellipsis(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption})">
+<summary>
+ Generate &lt;li&gt;&lt;button class=&quot;pagination-ellipsis&quot;&gt;&amp;hellip;&lt;/button&gt;&lt;/li&gt;
+ You control the `button` element
+</summary>
+</member>
+<member name="M:Fulma.Pagination.link(Microsoft.FSharp.Collections.FSharpList{Fulma.Pagination.Link.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;li&gt;&lt;button class=&quot;pagination-link&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+ You control the `button` element
+</summary>
+</member>
+<member name="M:Fulma.Pagination.next(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;button class=&quot;pagination-next&quot;&gt;&lt;/button&gt;
+</summary>
+</member>
+<member name="M:Fulma.Pagination.previous(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;button class=&quot;pagination-previous&quot;&gt;&lt;/button&gt;
+</summary>
+</member>
+<member name="M:Fulma.Pagination.pagination(Microsoft.FSharp.Collections.FSharpList{Fulma.Pagination.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;nav class=&quot;pagination&quot;&gt;&lt;/nav&gt;
+</summary>
+</member>
+<member name="T:Fulma.Pagination.Link.Option.Current">
+<summary>
+ Add `is-current` class if true
+</summary>
+</member>
+<member name="M:Fulma.Pagination.Link.button(Microsoft.FSharp.Collections.FSharpList{Fulma.Pagination.Link.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;li&gt;&lt;button class=&quot;pagination-link&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+ You control the `button` element
+</summary>
+</member>
+<member name="M:Fulma.Pagination.Link.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Pagination.Link.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;li&gt;&lt;a class=&quot;pagination-link&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+ You control the `a` element
+</summary>
+</member>
+<member name="M:Fulma.Pagination.Next.button(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;button class=&quot;pagination-next&quot;&gt;&lt;/button&gt;
+</summary>
+</member>
+<member name="M:Fulma.Pagination.Next.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;pagination-next&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Pagination.Previous.button(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;button class=&quot;pagination-previous&quot;&gt;&lt;/button&gt;
+</summary>
+</member>
+<member name="M:Fulma.Pagination.Previous.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;pagination-previous&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.icon(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;panel-icon&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.tab(Microsoft.FSharp.Collections.FSharpList{Fulma.Panel.Tab.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.tabs(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;panel-tabs&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.heading(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;panel-heading&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.panel(Microsoft.FSharp.Collections.FSharpList{Fulma.Panel.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;nav class=&quot;panel&quot;&gt;&lt;/nav&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.checkbox(Microsoft.FSharp.Collections.FSharpList{Fulma.Panel.Block.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;label class=&quot;panel-block&quot;&gt;&lt;/label&gt;
+</summary>
+</member>
+<member name="T:Fulma.Panel.Block.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Panel.Block.p(Microsoft.FSharp.Collections.FSharpList{Fulma.Panel.Block.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;panel-block&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.Block.label(Microsoft.FSharp.Collections.FSharpList{Fulma.Panel.Block.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;label class=&quot;panel-block&quot;&gt;&lt;/label&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.Block.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Panel.Block.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;panel-block&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Panel.Block.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Panel.Block.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;panel-block&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Panel.Tab.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="T:Fulma.Tabs.Option.IsFullWidth">
+<summary>
+ Add `is-fullwidth` class
+</summary>
+</member>
+<member name="T:Fulma.Tabs.Option.IsToggleRounded">
+<summary>
+ Add `is-toggle-rounded` class
+</summary>
+</member>
+<member name="T:Fulma.Tabs.Option.IsToggle">
+<summary>
+ Add `is-toggle` class
+</summary>
+</member>
+<member name="T:Fulma.Tabs.Option.IsBoxed">
+<summary>
+ Add `is-boxed` class
+</summary>
+</member>
+<member name="T:Fulma.Tabs.Option.IsRight">
+<summary>
+ Add `is-right` class
+</summary>
+</member>
+<member name="T:Fulma.Tabs.Option.IsCentered">
+<summary>
+ Add `is-centered` class
+</summary>
+</member>
+<member name="M:Fulma.Tabs.tab(Microsoft.FSharp.Collections.FSharpList{Fulma.Tabs.Tab.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;li&gt;&lt;/li&gt;
+</summary>
+</member>
+<member name="M:Fulma.Tabs.tabs(Microsoft.FSharp.Collections.FSharpList{Fulma.Tabs.Option},System.Collections.Generic.IEnumerable{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;tabs&quot;&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Tabs.Tab.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="M:Fulma.Box.box'(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.Disabled">
+<summary>
+ Set `disabled` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsLight">
+<summary>
+ Add `is-light` class
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsStatic">
+<summary>
+ Add `is-static` class if true
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsLoading">
+<summary>
+ Add `is-loading` class if true
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsFocused">
+<summary>
+ Add `is-focused` class if true
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsHovered">
+<summary>
+ Add `is-hovered` class if true
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsExpanded">
+<summary>
+ Add `is-expanded` class
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsRounded">
+<summary>
+ Add `is-rounded` class
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsGhost">
+<summary>
+ Add `is-ghost` class
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsText">
+<summary>
+ Add `is-text` class
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsInverted">
+<summary>
+ Add `is-inverted` class
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsOutlined">
+<summary>
+ Add `is-outlined` class
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsLink">
+<summary>
+ Add `is-link` class
+</summary>
+</member>
+<member name="T:Fulma.Button.Option.IsFullWidth">
+<summary>
+ Add `is-fullwidth` class
+</summary>
+</member>
+<member name="M:Fulma.Button.list(Microsoft.FSharp.Collections.FSharpList{Fulma.Button.List.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;buttons&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Button.a(Microsoft.FSharp.Collections.FSharpList{Fulma.Button.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;button&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="M:Fulma.Button.span(Microsoft.FSharp.Collections.FSharpList{Fulma.Button.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;button&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="M:Fulma.Button.button(Microsoft.FSharp.Collections.FSharpList{Fulma.Button.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;button class=&quot;button&quot;&gt;&lt;/button&gt;
+</summary>
+</member>
+<member name="T:Fulma.Button.List.Option.AreLarge">
+<summary>
+ Add `are-large` class
+</summary>
+</member>
+<member name="T:Fulma.Button.List.Option.AreMedium">
+<summary>
+ Add `are-medium` class
+</summary>
+</member>
+<member name="T:Fulma.Button.List.Option.AreSmall">
+<summary>
+ Add `are-small` class
+</summary>
+</member>
+<member name="T:Fulma.Button.List.Option.IsCentered">
+<summary>
+ Add `is-centered` class
+</summary>
+</member>
+<member name="T:Fulma.Button.List.Option.HasAddons">
+<summary>
+ Add `has-addons` class
+</summary>
+</member>
+<member name="M:Fulma.Button.Input.submit(Microsoft.FSharp.Collections.FSharpList{Fulma.Button.Option})">
+<summary>
+ Generate &lt;input type=&quot;submit&quot; class=&quot;button&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Button.Input.reset(Microsoft.FSharp.Collections.FSharpList{Fulma.Button.Option})">
+<summary>
+ Generate &lt;input type=&quot;reset&quot; class=&quot;button&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Content.content(Microsoft.FSharp.Collections.FSharpList{Fulma.Content.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;content&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Content.Ol.ol(Microsoft.FSharp.Collections.FSharpList{Fulma.Content.Ol.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;ol&gt;&lt;/ol&gt;
+</summary>
+</member>
+<member name="M:Fulma.Delete.delete(Microsoft.FSharp.Collections.FSharpList{Fulma.Delete.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;a class=&quot;delete&quot;&gt;&lt;/a&gt;
+</summary>
+</member>
+<member name="T:Fulma.Heading.Option.IsSpaced">
+<summary>
+ Add `is-spaced` class
+</summary>
+</member>
+<member name="T:Fulma.Heading.Option.IsSubtitle">
+<summary>
+ Add `subtitle` class
+</summary>
+</member>
+<member name="T:Fulma.Heading.Option.Is6">
+<summary>
+ Add `is-6` class
+</summary>
+</member>
+<member name="T:Fulma.Heading.Option.Is5">
+<summary>
+ Add `is-5` class
+</summary>
+</member>
+<member name="T:Fulma.Heading.Option.Is4">
+<summary>
+ Add `is-4` class
+</summary>
+</member>
+<member name="T:Fulma.Heading.Option.Is3">
+<summary>
+ Add `is-3` class
+</summary>
+</member>
+<member name="T:Fulma.Heading.Option.Is2">
+<summary>
+ Add `is-2` class
+</summary>
+</member>
+<member name="T:Fulma.Heading.Option.Is1">
+<summary>
+ Add `is-1` class
+</summary>
+</member>
+<member name="M:Fulma.Heading.p(Microsoft.FSharp.Collections.FSharpList{Fulma.Heading.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;title&quot;&gt;&lt;/p&gt;
+ Class can be `subtitle` if you pass `Heading.IsSubtitle`
+</summary>
+</member>
+<member name="M:Fulma.Heading.h6(Microsoft.FSharp.Collections.FSharpList{Fulma.Heading.Option})">
+<summary>
+ Generate &lt;h6 class=&quot;title is-6&quot;&gt;&lt;/h6&gt;
+ Class can be `subtitle` if you pass `Heading.IsSubtitle`
+</summary>
+</member>
+<member name="M:Fulma.Heading.h5(Microsoft.FSharp.Collections.FSharpList{Fulma.Heading.Option})">
+<summary>
+ Generate &lt;h5 class=&quot;title is-5&quot;&gt;&lt;/h5&gt;
+ Class can be `subtitle` if you pass `Heading.IsSubtitle`
+</summary>
+</member>
+<member name="M:Fulma.Heading.h4(Microsoft.FSharp.Collections.FSharpList{Fulma.Heading.Option})">
+<summary>
+ Generate &lt;h4 class=&quot;title is-4&quot;&gt;&lt;/h4&gt;
+ Class can be `subtitle` if you pass `Heading.IsSubtitle`
+</summary>
+</member>
+<member name="M:Fulma.Heading.h3(Microsoft.FSharp.Collections.FSharpList{Fulma.Heading.Option})">
+<summary>
+ Generate &lt;h3 class=&quot;title is-3&quot;&gt;&lt;/h3&gt;
+ Class can be `subtitle` if you pass `Heading.IsSubtitle`
+</summary>
+</member>
+<member name="M:Fulma.Heading.h2(Microsoft.FSharp.Collections.FSharpList{Fulma.Heading.Option})">
+<summary>
+ Generate &lt;h2 class=&quot;title is-2&quot;&gt;&lt;/h2&gt;
+ Class can be `subtitle` if you pass `Heading.IsSubtitle`
+</summary>
+</member>
+<member name="M:Fulma.Heading.h1(Microsoft.FSharp.Collections.FSharpList{Fulma.Heading.Option})">
+<summary>
+ Generate &lt;h1 class=&quot;title is-1&quot;&gt;&lt;/h1&gt;
+ Class can be `subtitle` if you pass `Heading.IsSubtitle`
+</summary>
+</member>
+<member name="T:Fulma.Icon.Option.IsRight">
+<summary>
+ Add `is-right` class
+</summary>
+</member>
+<member name="T:Fulma.Icon.Option.IsLeft">
+<summary>
+ Add `is-left` class
+</summary>
+</member>
+<member name="M:Fulma.Icon.icon(Microsoft.FSharp.Collections.FSharpList{Fulma.Icon.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;icon&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.IsFullwidth">
+<summary>
+ Add `is-fullwidth` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is1by3">
+<summary>
+ Add `is-1by3` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is1by2">
+<summary>
+ Add `is-1by2` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is9by16">
+<summary>
+ Add `is-9by16` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is3by5">
+<summary>
+ Add `is-3by5` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is2by3">
+<summary>
+ Add `is-2by3` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is3by4">
+<summary>
+ Add `is-3by4` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is4by5">
+<summary>
+ Add `is-4by5` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is3by1">
+<summary>
+ Add `is-3by1` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is2by1">
+<summary>
+ Add `is-2by1` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is16by9">
+<summary>
+ Add `is-16by9` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is5by3">
+<summary>
+ Add `is-5by3` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is3by2">
+<summary>
+ Add `is-3by2` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is4by3">
+<summary>
+ Add `is-4by3` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is5by4">
+<summary>
+ Add `is-5by4` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is1by1">
+<summary>
+ Add `is-1by1` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.IsSquare">
+<summary>
+ Add `is-square` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is128x128">
+<summary>
+ Add `is-128x128` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is96x96">
+<summary>
+ Add `is-96x96` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is64x64">
+<summary>
+ Add `is-64x64` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is48x48">
+<summary>
+ Add `is-48x48` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is32x32">
+<summary>
+ Add `is-32x32` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is24x24">
+<summary>
+ Add `is-24x24` class
+</summary>
+</member>
+<member name="T:Fulma.Image.Option.Is16x16">
+<summary>
+ Add `is-16x16` class
+</summary>
+</member>
+<member name="M:Fulma.Image.image(Microsoft.FSharp.Collections.FSharpList{Fulma.Image.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;figure class=&quot;image&quot;&gt;&lt;/figure&gt;
+</summary>
+</member>
+<member name="T:Fulma.Notification.Option.IsLight">
+<summary>
+ Add `is-light` class
+</summary>
+</member>
+<member name="M:Fulma.Notification.delete(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;button class=&quot;delete&quot;&gt;&lt;/button&gt;
+</summary>
+</member>
+<member name="M:Fulma.Notification.notification(Microsoft.FSharp.Collections.FSharpList{Fulma.Notification.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;notification&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Progress.Option.Max">
+<summary>
+ Set `Max` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Progress.Option.Value">
+<summary>
+ Set `Value` HTMLAttr
+</summary>
+</member>
+<member name="M:Fulma.Progress.progress(Microsoft.FSharp.Collections.FSharpList{Fulma.Progress.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;progress class=&quot;progress&quot;&gt;&lt;/progress&gt;
+</summary>
+</member>
+<member name="T:Fulma.Table.TableOption.IsHoverable">
+<summary>
+ Set `is-hoverable` class
+</summary>
+</member>
+<member name="T:Fulma.Table.TableOption.IsNarrow">
+<summary>
+ Set `is-narrow` class
+</summary>
+</member>
+<member name="T:Fulma.Table.TableOption.IsFullWidth">
+<summary>
+ Add `is-fullwidth` class
+</summary>
+</member>
+<member name="T:Fulma.Table.TableOption.IsStriped">
+<summary>
+ Set `is-striped` class
+</summary>
+</member>
+<member name="T:Fulma.Table.TableOption.IsBordered">
+<summary>
+ Set `is-hovered` class
+</summary>
+</member>
+<member name="M:Fulma.Table.table(Microsoft.FSharp.Collections.FSharpList{Fulma.Table.TableOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;table class=&quot;table&quot;&gt;&lt;/table&gt;
+</summary>
+</member>
+<member name="T:Fulma.Tag.Option.IsLight">
+<summary>
+ Add `is-light` class
+</summary>
+</member>
+<member name="T:Fulma.Tag.Option.IsDelete">
+<summary>
+ Add `is-delete` class
+</summary>
+</member>
+<member name="M:Fulma.Tag.list(Microsoft.FSharp.Collections.FSharpList{Fulma.Tag.List.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;tags&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Tag.delete(Microsoft.FSharp.Collections.FSharpList{Fulma.Tag.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;tag is-delete&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="M:Fulma.Tag.tag(Microsoft.FSharp.Collections.FSharpList{Fulma.Tag.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;tag&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="T:Fulma.Tag.List.Option.AreLarge">
+<summary>
+ Add `are-large` class
+</summary>
+</member>
+<member name="T:Fulma.Tag.List.Option.AreMedium">
+<summary>
+ Add `are-medium` class
+</summary>
+</member>
+<member name="T:Fulma.Tag.List.Option.AreSmall">
+<summary>
+ Add `are-small` class
+</summary>
+</member>
+<member name="T:Fulma.Tag.List.Option.IsRight">
+<summary>
+ Add `is-right` class
+</summary>
+</member>
+<member name="T:Fulma.Tag.List.Option.IsCentered">
+<summary>
+ Add `is-centered` class
+</summary>
+</member>
+<member name="T:Fulma.Tag.List.Option.HasAddons">
+<summary>
+ Add `has-addons` class
+</summary>
+</member>
+<member name="M:Fulma.Checkbox.input(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption})">
+<summary>
+ Generate &lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot;/&gt;
+</summary>
+</member>
+<member name="M:Fulma.Checkbox.checkbox(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;label class=&quot;checkbox&quot;&gt;&lt;/label&gt;
+</summary>
+</member>
+<member name="T:Fulma.Control.Option.IsExpanded">
+<summary>
+ Add `is-expanded` class
+</summary>
+</member>
+<member name="T:Fulma.Control.Option.IsLoading">
+<summary>
+ Add `is-loading` class if true
+</summary>
+</member>
+<member name="T:Fulma.Control.Option.HasIconLeft">
+<summary>
+ Add `has-icons-left` class
+</summary>
+</member>
+<member name="T:Fulma.Control.Option.HasIconRight">
+<summary>
+ Add `has-icons-right` class
+</summary>
+</member>
+<member name="M:Fulma.Control.p(Microsoft.FSharp.Collections.FSharpList{Fulma.Control.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;control&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="M:Fulma.Control.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Control.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;control&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.IsExpanded">
+<summary>
+ Add `is-expanded` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.IsHorizontal">
+<summary>
+ Add `is-horizontal` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.IsGroupedMultiline">
+<summary>
+ Add `is-grouped-multiline` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.IsGroupedRight">
+<summary>
+ Add `is-grouped-right` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.IsGroupedCentered">
+<summary>
+ Add `is-grouped-centered` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.IsGrouped">
+<summary>
+ Add `is-grouped` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.HasAddonsFullWidth">
+<summary>
+ Add `has-addons-fullwidth` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.HasAddonsRight">
+<summary>
+ Add `has-addons-right` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.HasAddonsCentered">
+<summary>
+ Add `has-addons-centered` class
+</summary>
+</member>
+<member name="T:Fulma.Field.Option.HasAddons">
+<summary>
+ Add `has-addons` class
+</summary>
+</member>
+<member name="M:Fulma.Field.p(Microsoft.FSharp.Collections.FSharpList{Fulma.Field.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;field&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="M:Fulma.Field.div(Microsoft.FSharp.Collections.FSharpList{Fulma.Field.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;field&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Field.label(Microsoft.FSharp.Collections.FSharpList{Fulma.Field.Label.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;field-label&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Field.body(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;field-body&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Field.Label.Option.IsNormal">
+<summary>
+ Add `is-normal` class
+</summary>
+</member>
+<member name="T:Fulma.File.Option.IsEmpty">
+<summary>
+ Add `is-empty` class if true
+</summary>
+</member>
+<member name="T:Fulma.File.Option.HasName">
+<summary>
+ Add `has-name` class
+</summary>
+</member>
+<member name="T:Fulma.File.Option.IsBoxed">
+<summary>
+ Add `is-boxed` class
+</summary>
+</member>
+<member name="T:Fulma.File.Option.IsRight">
+<summary>
+ Add `is-right` class
+</summary>
+</member>
+<member name="T:Fulma.File.Option.IsCentered">
+<summary>
+ Add `is-centered` class
+</summary>
+</member>
+<member name="T:Fulma.File.Option.IsFullWidth">
+<summary>
+ Add `is-fullwidth` class
+</summary>
+</member>
+<member name="T:Fulma.File.Option.IsHovered">
+<summary>
+ Add `is-hovered` class if true
+</summary>
+</member>
+<member name="T:Fulma.File.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="T:Fulma.File.Option.IsFocused">
+<summary>
+ Add `is-focused` class if true
+</summary>
+</member>
+<member name="M:Fulma.File.icon(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;file-icon&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="M:Fulma.File.name(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;file-name&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="M:Fulma.File.cta(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;file-cta&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="M:Fulma.File.input(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption})">
+<summary>
+ Generate &lt;input type=&quot;file&quot; class=&quot;file-input&quot;/&gt;
+</summary>
+</member>
+<member name="M:Fulma.File.file(Microsoft.FSharp.Collections.FSharpList{Fulma.File.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;file&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.File.Label.label(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;label class=&quot;file-label&quot;&gt;&lt;/label&gt;
+</summary>
+</member>
+<member name="M:Fulma.File.Label.span(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;span class=&quot;file-label&quot;&gt;&lt;/span&gt;
+</summary>
+</member>
+<member name="M:Fulma.Help.help(Microsoft.FSharp.Collections.FSharpList{Fulma.Help.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;help&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.Placeholder">
+<summary>
+ Set `Placeholder` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.ValueOrDefault">
+<summary>
+ `Ref` callback that sets the value of an input textbox after DOM element is created.
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.DefaultValue">
+<summary>
+ Set `DefaultValue` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.Value">
+<summary>
+ Set `Value` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.IsRounded">
+<summary>
+ Add `is-rounded` class
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.IsStatic">
+<summary>
+ Add `is-static` class if true
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.IsReadOnly">
+<summary>
+ Set `IsReadOnly` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.Disabled">
+<summary>
+ Add `disabled` HTMLAttr if true
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.Id">
+<summary>
+ Set `Id` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Input.Option.Type">
+<summary>
+ Set `Type` HTMLAttr
+ Don&apos;t use if you used one of the helpers like: `Input.password`
+</summary>
+</member>
+<member name="M:Fulma.Input.color(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;color&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.tel(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;tel&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.search(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;search&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.url(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;url&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.email(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;email&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.number(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;number&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.week(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;week&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.time(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;time&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.month(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;month&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.date(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;date&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.datetimeLocal(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;datetime-local&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.password(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;password&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.text(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input type=&quot;text&quot; class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Input.input(Microsoft.FSharp.Collections.FSharpList{Fulma.Input.Option})">
+<summary>
+ Generate &lt;input class=&quot;input&quot; /&gt;
+</summary>
+</member>
+<member name="T:Fulma.Label.Option.For">
+<summary>
+ Set `For` HTMLAttr
+</summary>
+</member>
+<member name="M:Fulma.Label.label(Microsoft.FSharp.Collections.FSharpList{Fulma.Label.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;label class=&quot;label&quot;&gt;&lt;/label&gt;
+</summary>
+</member>
+<member name="M:Fulma.Radio.input(Microsoft.FSharp.Collections.FSharpList{Fulma.Radio.Input.Option})">
+<summary>
+ Generate &lt;input class=&quot;radio&quot; /&gt;
+</summary>
+</member>
+<member name="M:Fulma.Radio.radio(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;label class=&quot;radio&quot;&gt;&lt;/label&gt;
+</summary>
+</member>
+<member name="T:Fulma.Radio.Input.Option.Name">
+<summary>
+ Set `Name` HTMLAtrr
+</summary>
+</member>
+<member name="T:Fulma.Select.Option.IsMultiple">
+<summary>
+Add `is-multiple` class
+</summary>
+</member>
+<member name="T:Fulma.Select.Option.IsRounded">
+<summary>
+ Add `is-rounded` class
+</summary>
+</member>
+<member name="T:Fulma.Select.Option.Disabled">
+<summary>
+ Add `disabled` HTMLAttr if true
+</summary>
+</member>
+<member name="T:Fulma.Select.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="T:Fulma.Select.Option.IsFocused">
+<summary>
+ Add `is-focused` class if true
+</summary>
+</member>
+<member name="T:Fulma.Select.Option.IsLoading">
+<summary>
+ Add `is-loading` class if true
+</summary>
+</member>
+<member name="T:Fulma.Select.Option.IsInline">
+<summary>
+ Add `is-inline` class
+</summary>
+</member>
+<member name="T:Fulma.Select.Option.IsFullWidth">
+<summary>
+ Add `is-fullwidth` class
+</summary>
+</member>
+<member name="M:Fulma.Select.select(Microsoft.FSharp.Collections.FSharpList{Fulma.Select.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;select&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.HasFixedSize">
+<summary>
+ Add `has-fixed-size` class
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.Placeholder">
+<summary>
+ Set `Placeholder` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.ValueOrDefault">
+<summary>
+ `Ref` callback that sets the value of an input textbox after DOM element is created.
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.DefaultValue">
+<summary>
+ Set `DefaultValue` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.Value">
+<summary>
+ Set `Value` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.Disabled">
+<summary>
+ Add `disabled` HTMLAttr if true
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.IsReadOnly">
+<summary>
+ Add `IsReadOnly` HTMLAttr
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.IsActive">
+<summary>
+ Add `is-active` class if true
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.IsFocused">
+<summary>
+ Add `is-focused` class
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.IsLoading">
+<summary>
+ Add `is-loading` class if true
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.IsInline">
+<summary>
+ Add `is-inline` class
+</summary>
+</member>
+<member name="T:Fulma.Textarea.Option.IsFullWidth">
+<summary>
+ Add `is-fullwidth` class
+</summary>
+</member>
+<member name="M:Fulma.Textarea.textarea(Microsoft.FSharp.Collections.FSharpList{Fulma.Textarea.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;textarea class=&quot;textarea&quot;&gt;&lt;/textarea&gt;
+</summary>
+</member>
+<member name="T:Fulma.Column.Option.Offset">
+<summary>
+ Configure the offset of the column. You can configure the display and offset size
+ Example: Column.Offset (Column.Desktop, Column.Is6)
+ Becomes: `is-offset-6-desktop`
+</summary>
+</member>
+<member name="T:Fulma.Column.Option.Width">
+<summary>
+ Configure the width of the column. You can configure the display and size
+ Example: Column.Width (Column.Desktop, Column.Is6)
+ Becomes: `is-6-desktop`
+</summary>
+</member>
+<member name="M:Fulma.Column.column(Microsoft.FSharp.Collections.FSharpList{Fulma.Column.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;column&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Columns.Option.IsGapOnly">
+<summary>
+ Configure the gap size. You can configure the display and gap size
+ Example: Columns.IsGapOnly (Columns.Tablet, Columns.Is6)
+ Becomes: `is-6-tablet-only`
+</summary>
+</member>
+<member name="T:Fulma.Columns.Option.IsGap">
+<summary>
+ Configure the gap size. You can configure the display and gap size
+ Example: Columns.IsGap (Columns.Desktop, Columns.Is6)
+ Becomes: `is-6-desktop`
+</summary>
+</member>
+<member name="T:Fulma.Columns.Option.IsDesktop">
+<summary>
+ Add `is-desktop` class
+</summary>
+</member>
+<member name="T:Fulma.Columns.Option.IsMobile">
+<summary>
+ Add `is-mobile` class
+</summary>
+</member>
+<member name="T:Fulma.Columns.Option.IsGapless">
+<summary>
+ Add `is-gapless` class
+</summary>
+</member>
+<member name="T:Fulma.Columns.Option.IsMultiline">
+<summary>
+ Add `is-multiline` class
+</summary>
+</member>
+<member name="T:Fulma.Columns.Option.IsVCentered">
+<summary>
+ Add `is-vcentered` class
+</summary>
+</member>
+<member name="T:Fulma.Columns.Option.IsCentered">
+<summary>
+ Add `is-centered` class
+</summary>
+</member>
+<member name="M:Fulma.Columns.columns(Microsoft.FSharp.Collections.FSharpList{Fulma.Columns.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;columns&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="T:Fulma.Container.Option.IsFullHD">
+<summary>
+ Add `is-fullhd` class
+</summary>
+</member>
+<member name="T:Fulma.Container.Option.IsWideScreen">
+<summary>
+ Add `is-widescreen` class
+</summary>
+</member>
+<member name="T:Fulma.Container.Option.IsFluid">
+<summary>
+ Add `is-fluid` class
+</summary>
+</member>
+<member name="M:Fulma.Container.container(Microsoft.FSharp.Collections.FSharpList{Fulma.Container.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;container&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Footer.footer(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;footer class=&quot;footer&quot;&gt;&lt;/footer&gt;
+</summary>
+</member>
+<member name="T:Fulma.Hero.Option.IsFullHeight">
+<summary>
+ Add `is-fullheight` class
+</summary>
+</member>
+<member name="T:Fulma.Hero.Option.IsFullheightWithNavbar">
+<summary>
+ Add `is-fullheight-with-navbar` class
+</summary>
+</member>
+<member name="T:Fulma.Hero.Option.IsHalfHeight">
+<summary>
+ Add `is-halfheight` class
+</summary>
+</member>
+<member name="T:Fulma.Hero.Option.IsLarge">
+<summary>
+ Add `is-large` class
+</summary>
+</member>
+<member name="T:Fulma.Hero.Option.IsMedium">
+<summary>
+ Add `is-medium` class
+</summary>
+</member>
+<member name="T:Fulma.Hero.Option.IsBold">
+<summary>
+ Add `is-bold` class
+</summary>
+</member>
+<member name="M:Fulma.Hero.buttons(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;hero-buttons&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Hero.video(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;hero-video&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Hero.foot(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;hero-foot&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Hero.body(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;hero-body&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Hero.head(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;hero-head&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Hero.hero(Microsoft.FSharp.Collections.FSharpList{Fulma.Hero.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;hero&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Level.title(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;title&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="M:Fulma.Level.heading(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;p class=&quot;heading&quot;&gt;&lt;/p&gt;
+</summary>
+</member>
+<member name="M:Fulma.Level.item(Microsoft.FSharp.Collections.FSharpList{Fulma.Level.Item.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;level-item&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Level.right(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;level-right&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Level.left(Microsoft.FSharp.Collections.FSharpList{Fulma.Common.GenericOption},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;level-left&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Level.level(Microsoft.FSharp.Collections.FSharpList{Fulma.Level.Level.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;nav class=&quot;level&quot;&gt;&lt;/nav&gt;
+</summary>
+</member>
+<member name="T:Fulma.Level.Item.Option.HasTextCentered">
+<summary>
+ Add `has-text-centered` class
+</summary>
+</member>
+<member name="T:Fulma.Level.Level.Option.IsMobile">
+<summary>
+ Add `is-mobile` class
+</summary>
+</member>
+<member name="T:Fulma.Section.Option.IsLarge">
+<summary>
+ Add `is-large` class
+</summary>
+</member>
+<member name="T:Fulma.Section.Option.IsMedium">
+<summary>
+ Add `is-medium` class
+</summary>
+</member>
+<member name="M:Fulma.Section.section(Microsoft.FSharp.Collections.FSharpList{Fulma.Section.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;section class=&quot;section&quot;&gt;&lt;/section&gt;
+</summary>
+</member>
+<member name="T:Fulma.Tile.Option.IsVertical">
+<summary>
+ Add `is-vertical` class
+</summary>
+</member>
+<member name="T:Fulma.Tile.Option.IsParent">
+<summary>
+ Add `is-parent` class
+</summary>
+</member>
+<member name="T:Fulma.Tile.Option.IsAncestor">
+<summary>
+ Add `is-ancestor` class
+</summary>
+</member>
+<member name="T:Fulma.Tile.Option.IsChild">
+<summary>
+ Add `is-child` class
+</summary>
+</member>
+<member name="M:Fulma.Tile.ancestor(Microsoft.FSharp.Collections.FSharpList{Fulma.Tile.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;tile is-ancestor&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Tile.child(Microsoft.FSharp.Collections.FSharpList{Fulma.Tile.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;tile is-child&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Tile.parent(Microsoft.FSharp.Collections.FSharpList{Fulma.Tile.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;tile is-parent&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+<member name="M:Fulma.Tile.tile(Microsoft.FSharp.Collections.FSharpList{Fulma.Tile.Option},Microsoft.FSharp.Collections.FSharpList{Fable.React.ReactElement})">
+<summary>
+ Generate &lt;div class=&quot;tile&quot;&gt;&lt;/div&gt;
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Fable.Import.Node</name></assembly>
+<members>
+<member name="T:Fable.Import.Node.Buffer.BufferEncoding.Hex">
+<summary>
+  Encode each byte as two hexadecimal characters.
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Buffer.BufferEncoding.Binary">
+<summary>
+ Alias for &apos;latin1&apos;.
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Buffer.BufferEncoding.Latin1">
+<summary>
+ A way of encoding the Buffer into a one-byte encoded string (as defined by the IANA in RFC1345, page 63, to be the Latin-1 supplement block and C0/C1 control codes)
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Buffer.BufferEncoding.Base64">
+<summary>
+ Base64 encoding. When creating a Buffer from a string, this encoding will also correctly accept &quot;URL and Filename Safe Alphabet&quot; as specified in RFC4648, Section 5.
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Buffer.BufferEncoding.Usc2">
+<summary>
+ Alias of &apos;utf16le&apos;
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Buffer.BufferEncoding.Utf16le">
+<summary>
+ 2 or 4 bytes, little-endian encoded Unicode characters. Surrogate pairs (U+10000 to U+10FFFF) are supported.
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Buffer.BufferEncoding.Utf8">
+<summary>
+ Multibyte encoded Unicode characters. Many web pages and other document formats use UTF-8.
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Buffer.BufferEncoding.Ascii">
+<summary>
+For 7-bit ASCII data only. This encoding is fast and will strip the high bit if set.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Transform`2._transform(`0,System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{Fable.Import.JS.Error},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{`1},Microsoft.FSharp.Core.Unit}})">
+<summary>
+ All Transform stream implementations must provide a _transform() method to accept input and produce output. The transform._transform() implementation handles the bytes being written, computes an output, then passes that output off to the readable portion using the readable.push() method.
+ The transform.push() method may be called zero or more times to generate output from a single input chunk, depending on how much is to be output as a result of the chunk.
+ It is possible that no output is generated from any given chunk of input data.
+ The callback function must be called only when the current chunk is completely consumed. The first argument passed to the callback must be an Error object if an error occurred while processing the input or null otherwise. If a second argument is passed to the callback, it will be forwarded on to the readable.push() method.
+ Transform._transform() is never called in parallel; streams implement a queue mechanism, and to receive the next chunk, callback must be called, either synchronously or asynchronously.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Transform`2._flush(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{Fable.Import.JS.Error},Microsoft.FSharp.Core.Unit})">
+<summary>
+ In some cases, a transform operation may need to emit an additional bit of data at the end of the stream. For example, a zlib compression stream will store an amount of internal state used to optimally compress the output. When the stream ends, however, that additional data needs to be flushed so that the compressed data will be complete.
+ Custom Transform implementations may implement the transform._flush() method. This will be called when there is no more written data to be consumed, but before the &apos;end&apos; event is emitted signaling the end of the Readable stream.
+ Within the transform._flush() implementation, the readable.push() method may be called zero or more times, as appropriate. The callback function must be called when the flush operation is complete.
+ The transform._flush() method is prefixed with an underscore because it is internal to the class that defines it, and should never be called directly by user programs.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.TransformOptions`2.transform(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{Fable.Import.JS.Error},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{`1},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.Unit}}}})">
+<summary>
+ All Transform stream implementations must provide a _transform() method to accept input and produce output. The transform._transform() implementation handles the bytes being written, computes an output, then passes that output off to the readable portion using the readable.push() method.
+ The transform.push() method may be called zero or more times to generate output from a single input chunk, depending on how much is to be output as a result of the chunk.
+ It is possible that no output is generated from any given chunk of input data.
+ The callback function must be called only when the current chunk is completely consumed. The first argument passed to the callback must be an Error object if an error occurred while processing the input or null otherwise. If a second argument is passed to the callback, it will be forwarded on to the readable.push() method.
+ Transform._transform() is never called in parallel; streams implement a queue mechanism, and to receive the next chunk, callback must be called, either synchronously or asynchronously.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.TransformOptions`2.flush(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{Fable.Import.JS.Error},Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.Unit}})">
+<summary>
+ In some cases, a transform operation may need to emit an additional bit of data at the end of the stream. For example, a zlib compression stream will store an amount of internal state used to optimally compress the output. When the stream ends, however, that additional data needs to be flushed so that the compressed data will be complete.
+ Custom Transform implementations may implement the transform._flush() method. This will be called when there is no more written data to be consumed, but before the &apos;end&apos; event is emitted signaling the end of the Readable stream.
+ Within the transform._flush() implementation, the readable.push() method may be called zero or more times, as appropriate. The callback function must be called when the flush operation is complete.
+ The transform._flush() method is prefixed with an underscore because it is internal to the class that defines it, and should never be called directly by user programs.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.TransformOptions`2.transform">
+<summary>
+ All Transform stream implementations must provide a _transform() method to accept input and produce output. The transform._transform() implementation handles the bytes being written, computes an output, then passes that output off to the readable portion using the readable.push() method.
+ The transform.push() method may be called zero or more times to generate output from a single input chunk, depending on how much is to be output as a result of the chunk.
+ It is possible that no output is generated from any given chunk of input data.
+ The callback function must be called only when the current chunk is completely consumed. The first argument passed to the callback must be an Error object if an error occurred while processing the input or null otherwise. If a second argument is passed to the callback, it will be forwarded on to the readable.push() method.
+ Transform._transform() is never called in parallel; streams implement a queue mechanism, and to receive the next chunk, callback must be called, either synchronously or asynchronously.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.TransformOptions`2.flush">
+<summary>
+ In some cases, a transform operation may need to emit an additional bit of data at the end of the stream. For example, a zlib compression stream will store an amount of internal state used to optimally compress the output. When the stream ends, however, that additional data needs to be flushed so that the compressed data will be complete.
+ Custom Transform implementations may implement the transform._flush() method. This will be called when there is no more written data to be consumed, but before the &apos;end&apos; event is emitted signaling the end of the Readable stream.
+ Within the transform._flush() implementation, the readable.push() method may be called zero or more times, as appropriate. The callback function must be called when the flush operation is complete.
+ The transform._flush() method is prefixed with an underscore because it is internal to the class that defines it, and should never be called directly by user programs.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.DuplexOptions`1.writableObjectMode(Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Defaults to false. Sets objectMode for writable side of the stream. Has no effect if objectMode is true.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.DuplexOptions`1.readableObjectMode(Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Defaults to false. Sets objectMode for readable side of the stream. Has no effect if objectMode is true.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.DuplexOptions`1.allowHalfOpen(Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Defaults to true. If set to false, then the stream will automatically end the writable side when the readable side ends.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.DuplexOptions`1.writableObjectMode">
+<summary>
+ Defaults to false. Sets objectMode for writable side of the stream. Has no effect if objectMode is true.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.DuplexOptions`1.readableObjectMode">
+<summary>
+ Defaults to false. Sets objectMode for readable side of the stream. Has no effect if objectMode is true.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.DuplexOptions`1.allowHalfOpen">
+<summary>
+ Defaults to true. If set to false, then the stream will automatically end the writable side when the readable side ends.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Writable`1.write(`0)">
+<summary>
+ The writable.write() method writes some data to the stream, and calls the supplied callback once the data has been fully handled. If an error occurs, the callback may or may not be called with the error as its first argument. To reliably detect write errors, add a listener for the &apos;error&apos; event.
+ The return value is true if the internal buffer is less than the highWaterMark configured when the stream was created after admitting chunk. If false is returned, further attempts to write data to the stream should stop until the &apos;drain&apos; event is emitted.
+ While a stream is not draining, calls to write() will buffer chunk, and return false. Once all currently buffered chunks are drained (accepted for delivery by the operating system), the &apos;drain&apos; event will be emitted. It is recommended that once write() returns false, no more chunks be written until the &apos;drain&apos; event is emitted. While calling write() on a stream that is not draining is allowed, Node.js will buffer all written chunks until maximum memory usage occurs, at which point it will abort unconditionally. Even before it aborts, high memory usage will cause poor garbage collector performance and high RSS (which is not typically released back to the system, even after the memory is no longer required). Since TCP sockets may never drain if the remote peer does not read the data, writing a socket that is not draining may lead to a remotely exploitable vulnerability.
+  Writing data while the stream is not draining is particularly problematic for a Transform, because the Transform streams are paused by default until they are piped or an &apos;data&apos; or &apos;readable&apos; event handler is added.
+ If the data to be written can be generated or fetched on demand, it is recommended to encapsulate the logic into a Readable and use stream.pipe(). However, if calling write() is preferred, it is possible to respect backpressure and avoid memory issues using the &apos;drain&apos; event.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.Writable`1.writable(System.Boolean)">
+<summary>
+ Legacy. Always returns true.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.Writable`1.writable">
+<summary>
+ Legacy. Always returns true.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Writable`1.end">
+<summary>
+ Calling the writable.end() method signals that no more data will be written to the Writable. The optional chunk and encoding arguments allow one final additional chunk of data to be written immediately before closing the stream. If provided, the optional callback function is attached as a listener for the &apos;finish&apos; event.
+ Calling the stream.write() method after calling stream.end() will raise an error.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.WritableOptions`1.writev(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Fable.Import.JS.Array{Fable.Import.Node.Stream.WritevChunk{`0}},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{Fable.Import.JS.Error},Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.Unit}}})">
+<summary>
+ The writable._writev() method may be implemented in addition to writable._write() in stream implementations that are capable of processing multiple chunks of data at once. If implemented, the method will be called with all chunks of data currently buffered in the write queue.
+ The writable._writev() method is prefixed with an underscore because it is internal to the class that defines it, and should never be called directly by user programs.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.WritableOptions`1.write(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpFunc{Fable.Import.Node.Buffer.BufferEncoding,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{Fable.Import.JS.Error},Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.Unit}}}})">
+<summary>
+ The callback method must be called to signal either that the write completed successfully or failed with an error. The first argument passed to the callback must be the Error object if the call failed or null if the write succeeded.
+ It is important to note that all calls to writable.write() that occur between the time writable._write() is called and the callback is called will cause the written data to be buffered. Once the callback is invoked, the stream will emit a &apos;drain&apos; event. If a stream implementation is capable of processing multiple chunks of data at once, the writable._writev() method should be implemented.
+ If the decodeStrings property is set in the constructor options, then chunk may be a string rather than a Buffer, and encoding will indicate the character encoding of the string. This is to support implementations that have an optimized handling for certain string data encodings. If the decodeStrings property is explicitly set to false, the encoding argument can be safely ignored, and chunk will remain the same object that is passed to .write().
+ The writable._write() method is prefixed with an underscore because it is internal to the class that defines it, and should never be called directly by user programs.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.WritableOptions`1.decodeStrings(Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Whether or not to decode strings into Buffers before passing them to stream._write(). Defaults to true
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.WritableOptions`1.writev">
+<summary>
+ The writable._writev() method may be implemented in addition to writable._write() in stream implementations that are capable of processing multiple chunks of data at once. If implemented, the method will be called with all chunks of data currently buffered in the write queue.
+ The writable._writev() method is prefixed with an underscore because it is internal to the class that defines it, and should never be called directly by user programs.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.WritableOptions`1.write">
+<summary>
+ The callback method must be called to signal either that the write completed successfully or failed with an error. The first argument passed to the callback must be the Error object if the call failed or null if the write succeeded.
+ It is important to note that all calls to writable.write() that occur between the time writable._write() is called and the callback is called will cause the written data to be buffered. Once the callback is invoked, the stream will emit a &apos;drain&apos; event. If a stream implementation is capable of processing multiple chunks of data at once, the writable._writev() method should be implemented.
+ If the decodeStrings property is set in the constructor options, then chunk may be a string rather than a Buffer, and encoding will indicate the character encoding of the string. This is to support implementations that have an optimized handling for certain string data encodings. If the decodeStrings property is explicitly set to false, the encoding argument can be safely ignored, and chunk will remain the same object that is passed to .write().
+ The writable._write() method is prefixed with an underscore because it is internal to the class that defines it, and should never be called directly by user programs.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.WritableOptions`1.decodeStrings">
+<summary>
+ Whether or not to decode strings into Buffers before passing them to stream._write(). Defaults to true
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.wrap(Fable.Import.Node.Stream.Stream)">
+<summary>
+ Versions of Node.js prior to v0.10 had streams that did not implement the entire stream module API as it is currently defined. (See Compatibility for more information.)
+ When using an older Node.js library that emits &apos;data&apos; events and has a stream.pause() method that is advisory only, the readable.wrap() method can be used to create a Readable stream that uses the old stream as its data source.
+ It will rarely be necessary to use readable.wrap() but the method has been provided as a convenience for interacting with older Node.js applications and libraries.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.unshift(`0)">
+<summary>
+ The readable.unshift() method pushes a chunk of data back into the internal buffer. This is useful in certain situations where a stream is being consumed by code that needs to &quot;un-consume&quot; some amount of data that it has optimistically pulled out of the source, so that the data can be passed on to some other party.
+ Note: The stream.unshift(chunk) method cannot be called after the &apos;end&apos; event has been emitted or a runtime error will be thrown.
+ Developers using stream.unshift() often should consider switching to use of a Transform stream instead. 
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.unpipe(Microsoft.FSharp.Core.FSharpOption{Fable.Import.Node.Stream.Writable{`0}})">
+<summary>
+ The readable.unpipe() method detaches a Writable stream previously attached using the stream.pipe() method.
+ If the destination is not specified, then all pipes are detached.
+ If the destination is specified, but no pipe is set up for it, then the method does nothing.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.Readable`1.readable(System.Boolean)">
+<summary>
+ Legacy. Always returns true.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.setEncoding(Fable.Import.Node.Buffer.BufferEncoding)">
+<summary>
+ The readable.setEncoding() method sets the character encoding for data read from the Readable stream.
+ By default, no encoding is assigned and stream data will be returned as Buffer objects. Setting an encoding causes the stream data to be returned as strings of the specified encoding rather than as Buffer objects. For instance, calling readable.setEncoding(&apos;utf8&apos;) will cause the output data to be interpreted as UTF-8 data, and passed as strings. Calling readable.setEncoding(&apos;hex&apos;) will cause the data to be encoded in hexadecimal string format.
+ The Readable stream will properly handle multi-byte characters delivered through the stream that would otherwise become improperly decoded if simply pulled from the stream as Buffer objects.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.resume">
+<summary>
+ The readable.resume() method causes an explicitly paused Readable stream to resume emitting &apos;data&apos; events, switching the stream into flowing mode.
+ The readable.resume() method can be used to fully consume the data from a stream without actually processing any of that data.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.read(Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ The readable.read() method pulls some data out of the internal buffer and returns it. If no data available to be read, null is returned. By default, the data will be returned as a Buffer object unless an encoding has been specified using the readable.setEncoding() method or the stream is operating in object mode.
+ The optional size argument specifies a specific number of bytes to read. If size bytes are not available to be read, null will be returned unless the stream has ended, in which case all of the data remaining in the internal buffer will be returned.
+ If the size argument is not specified, all of the data contained in the internal buffer will be returned.
+ The readable.read() method should only be called on Readable streams operating in paused mode. In flowing mode, readable.read() is called automatically until the internal buffer is fully drained.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.push(Microsoft.FSharp.Core.FSharpOption{`0},Microsoft.FSharp.Core.FSharpOption{Fable.Import.Node.Buffer.BufferEncoding})">
+<summary>
+ When chunk is a Buffer, Uint8Array or string, the chunk of data will be added to the internal queue for users of the stream to consume. Passing chunk as null signals the end of the stream (EOF), after which no more data can be written.
+ When the Readable is operating in paused mode, the data added with readable.push() can be read out by calling the readable.read() method when the &apos;readable&apos; event is emitted.
+ When the Readable is operating in flowing mode, the data added with readable.push() will be delivered by emitting a &apos;data&apos; event.
+ The readable.push() method is designed to be as flexible as possible. For example, when wrapping a lower-level source that provides some form of pause/resume mechanism, and a data callback, the low-level source can be wrapped by the custom Readable instance
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.pipe``1(``0,Microsoft.FSharp.Core.FSharpOption{System.Object})">
+<summary>
+ The readable.pipe() method attaches a Writable stream to the readable, causing it to switch automatically into flowing mode and push all of its data to the attached Writable. The flow of data will be automatically managed so that the destination Writable stream is not overwhelmed by a faster Readable stream.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.pause">
+<summary>
+ The readable.pause() method will cause a stream in flowing mode to stop emitting &apos;data&apos; events, switching out of flowing mode. Any data that becomes available will remain in the internal buffer.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Stream.Readable`1.isPaused">
+<summary>
+ The readable.isPaused() method returns the current operating state of the Readable. This is used primarily by the mechanism that underlies the readable.pipe() method. In most typical cases, there will be no reason to use this method directly.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.Readable`1.readable">
+<summary>
+ Legacy. Always returns true.
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Stream.Readable`1">
+<summary>
+ Readable streams are an abstraction for a source from which data is consumed.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.ReadableOptions.read(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.Unit}})">
+<summary>
+ All Readable stream implementations must provide an implementation of the readable._read() method to fetch data from the underlying resource.
+ When readable._read() is called, if data is available from the resource, the implementation should begin pushing that data into the read queue using the this.push(dataChunk) method. _read() should continue reading from the resource and pushing data until readable.push() returns false. Only when _read() is called again after it has stopped should it resume pushing additional data onto the queue.
+ Note: Once the readable._read() method has been called, it will not be called again until the readable.push() method is called.
+ The size argument is advisory. For implementations where a &quot;read&quot; is a single operation that returns data can use the size argument to determine how much data to fetch. Other implementations may ignore this argument and simply provide data whenever it becomes available. There is no need to &quot;wait&quot; until size bytes are available before calling stream.push(chunk).
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.ReadableOptions.encoding(Microsoft.FSharp.Core.FSharpOption{Fable.Import.Node.Buffer.BufferEncoding})">
+<summary>
+ If specified, then buffers will be decoded to strings using the specified encoding. Defaults to null
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.ReadableOptions.read">
+<summary>
+ All Readable stream implementations must provide an implementation of the readable._read() method to fetch data from the underlying resource.
+ When readable._read() is called, if data is available from the resource, the implementation should begin pushing that data into the read queue using the this.push(dataChunk) method. _read() should continue reading from the resource and pushing data until readable.push() returns false. Only when _read() is called again after it has stopped should it resume pushing additional data onto the queue.
+ Note: Once the readable._read() method has been called, it will not be called again until the readable.push() method is called.
+ The size argument is advisory. For implementations where a &quot;read&quot; is a single operation that returns data can use the size argument to determine how much data to fetch. Other implementations may ignore this argument and simply provide data whenever it becomes available. There is no need to &quot;wait&quot; until size bytes are available before calling stream.push(chunk).
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.ReadableOptions.encoding">
+<summary>
+ If specified, then buffers will be decoded to strings using the specified encoding. Defaults to null
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.Options.objectMode(Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<summary>
+ Whether this stream should behave as a stream of objects. Defaults to false
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.Options.highWaterMark(Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ The maximum number of bytes to store in the internal buffer before ceasing to read from the underlying resource. Defaults to 16384 (16kb), or 16 for objectMode streams
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.Options.objectMode">
+<summary>
+ Whether this stream should behave as a stream of objects. Defaults to false
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Stream.Options.highWaterMark">
+<summary>
+ The maximum number of bytes to store in the internal buffer before ceasing to read from the underlying resource. Defaults to 16384 (16kb), or 16 for objectMode streams
+</summary>
+</member>
+<member name="T:Fable.Import.Node.Stream.Stream">
+<summary>
+ Legacy Stream Representation
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Fs.IExports.mkdirSync(System.String)">
+<summary>
+ Synchronous mkdir(2). Returns undefined.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Fs.IExports.mkdir(System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpOption{Fable.Import.Node.Base.NodeJS.ErrnoException},Microsoft.FSharp.Core.Unit}})">
+<summary>
+ Asynchronous mkdir(2). No arguments other than a possible exception are given to the completion callback. mode defaults to 0o777.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.resolve(System.String[])">
+<summary>
+ resolves a sequence of paths or path segments into an absolute path.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.relative(System.String,System.String)">
+<summary>
+ returns the relative path from from to to. If from and to each resolve to the same path (after calling path.resolve() on each), a zero-length string is returned.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.parse(System.String)">
+<summary>
+ Returns an object whose properties represent significant elements of the path. Trailing directory separators are ignored.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.normalize(System.String)">
+<summary>
+ Normalizes the given path, resolving &apos;..&apos; and &apos;.&apos; segments.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.join(System.String[])">
+<summary>
+ Joins all given path segments together using the platform specific separator as a delimiter, then normalizes the resulting path. Zero-length path segments are ignored. If the joined path string is a zero-length string then &apos;.&apos; will be returned, representing the current working directory.  
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.isAbsolute(System.String)">
+<summary>
+ Determines if path is an absolute path.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Path.IExports.win32">
+<summary>
+ Provides access to Windows-specific implementations of the path methods.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Path.IExports.sep">
+<summary>
+ Provides the platform-specific path segment separator. &quot;\&quot; On Windows, &quot;/&quot; on POSIX
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Path.IExports.posix">
+<summary>
+ Provides access to POSIX specific implementations of the path methods.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Path.IExports.delimiter">
+<summary>
+ Provides the platform-specific path delimiter. &quot;;&quot; for Windows. &quot;:&quot;
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.format(Fable.Import.Node.Path.PathObjectProps)">
+<summary>
+ Returns a path string from an object, this is the oppisite of path.parse
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.extname(System.String)">
+<summary>
+ The path.extname() method returns the extension of the path, from the last occurrence of the . (period) character to end of string in the last portion of the path. If there is no . in the last portion of the path, or if the first character of the basename of path is ., then an empty string is returned.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.dirname(System.String)">
+<summary>
+ Returns the directory name of a &apos;path&apos;
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.basename(System.String,System.String)">
+<summary>
+ Returns the last portion of &apos;path&apos; argument. Similar to the &quot;basename&quot; command in UNIX.Trailing directory separators are ignored
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Path.IExports.basename(System.String)">
+<summary>
+ Returns the last portion of &apos;path&apos; argument. Similar to the &quot;basename&quot; command in UNIX.Trailing directory separators are ignored
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.port(Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ port &lt;number&gt; Port the socket should connect to.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.path(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ path &lt;string&gt; Path the client should connect to. If provided, the TCP-specific options above are ignored.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.localPort(Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ localPort &lt;number&gt; Local port the socket should connect from.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.localAddress(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ localAddress &lt;string&gt; Local address the socket should connect from.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.host(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ host &lt;string&gt; Host the socket should connect to. Default: &apos;localhost&apos;
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.family(Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ family &lt;number&gt; Version of IP stack, can be either 4 or 6. Default: 4
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.port">
+<summary>
+ port &lt;number&gt; Port the socket should connect to.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.path">
+<summary>
+ path &lt;string&gt; Path the client should connect to. If provided, the TCP-specific options above are ignored.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.localPort">
+<summary>
+ localPort &lt;number&gt; Local port the socket should connect from.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.localAddress">
+<summary>
+ localAddress &lt;string&gt; Local address the socket should connect from.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.host">
+<summary>
+ host &lt;string&gt; Host the socket should connect to. Default: &apos;localhost&apos;
+</summary>
+</member>
+<member name="P:Fable.Import.Node.Net.ConnectOptions.family">
+<summary>
+ family &lt;number&gt; Version of IP stack, can be either 4 or 6. Default: 4
+</summary>
+</member>
+<member name="P:Fable.Import.Node.ChildProcess.ExecOptions.timeout(Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Timeout, in milliseconds. Default is zero (no timeout).
+</summary>
+</member>
+<member name="P:Fable.Import.Node.ChildProcess.ExecOptions.encoding(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Default: &apos;utf8&apos;
+</summary>
+</member>
+<member name="P:Fable.Import.Node.ChildProcess.ExecOptions.cwd(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Current working directory of the child process
+</summary>
+</member>
+<member name="P:Fable.Import.Node.ChildProcess.ExecOptions.timeout">
+<summary>
+ Timeout, in milliseconds. Default is zero (no timeout).
+</summary>
+</member>
+<member name="P:Fable.Import.Node.ChildProcess.ExecOptions.encoding">
+<summary>
+ Default: &apos;utf8&apos;
+</summary>
+</member>
+<member name="P:Fable.Import.Node.ChildProcess.ExecOptions.cwd">
+<summary>
+ Current working directory of the child process
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.userInfo(Microsoft.FSharp.Core.FSharpOption{Fable.Import.Node.OS.UserInfoOptions})">
+<summary>
+ The os.userInfo() method returns information about the currently effective user -- on POSIX platforms, this is typically a subset of the password file. The returned object includes the username, uid, gid, shell, and homedir. On Windows, the uid and gid fields are -1, and shell is null.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.uptime">
+<summary>
+ The os.uptime() method returns the system uptime in number of seconds.
+ Note: On Windows the returned value includes fractions of a second.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.type">
+<summary>
+ The os.type() method returns a string identifying the operating system name as returned by uname(3). For example &apos;Linux&apos; on Linux, &apos;Darwin&apos; on macOS and &apos;Windows_NT&apos; on Windows.
+ Please see https://en.wikipedia.org/wiki/Uname#Examples for additional information about the output of running uname(3) on various operating systems.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.totalmem">
+<summary>
+ The os.totalmem() method returns the total amount of system memory in bytes as an integer.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.tmpdir">
+<summary>
+ The os.tmpdir() method returns a string specifying the operating system&apos;s default directory for temporary files.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.OS.IExports.constants(Fable.Import.Node.OS.Constants)">
+<summary>
+ Returns an object containing commonly used operating system specific constants for error codes, process signals, and so on.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.OS.IExports.EOL(System.String)">
+<summary>
+ A string constant defining the operating system-specific end-of-line marker:
+ - \n on POSIX
+ - \r\n on Windows
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.release">
+<summary>
+ The os.release() method returns a string identifying the operating system release.
+ Note: On POSIX systems, the operating system release is determined by calling uname(3). On Windows, GetVersionExW() is used. Please see https://en.wikipedia.org/wiki/Uname#Examples for more information.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.platform">
+<summary>
+ The os.platform() method returns a string identifying the operating system platform as set during compile time of Node.js.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.networkInterfaces">
+<summary>
+ The os.networkInterfaces() method returns an object containing only network interfaces that have been assigned a network address.
+ Each key on the returned object identifies a network interface. The associated value is an array of objects that each describe an assigned network address.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.loadavg">
+<summary>
+ The os.loadavg() method returns an array containing the 1, 5, and 15 minute load averages.
+ The load average is a measure of system activity, calculated by the operating system and expressed as a fractional number. As a rule of thumb, the load average should ideally be less than the number of logical CPUs in the system.
+ The load average is a UNIX-specific concept with no real equivalent on Windows platforms. On Windows, the return value is always [0, 0, 0].
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.hostname">
+<summary>
+ The os.hostname() method returns the hostname of the operating system as a string.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.homedir">
+<summary>
+ The os.homedir() method returns the home directory of the current user as a string.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.OS.IExports.constants">
+<summary>
+ Returns an object containing commonly used operating system specific constants for error codes, process signals, and so on.
+</summary>
+</member>
+<member name="P:Fable.Import.Node.OS.IExports.EOL">
+<summary>
+ A string constant defining the operating system-specific end-of-line marker:
+ - \n on POSIX
+ - \r\n on Windows
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.freemem">
+<summary>
+ The os.freemem() method returns the amount of free system memory in bytes as an integer.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.endianness">
+<summary>
+ The os.endianness() method returns a string identifying the endianness of the CPU for which the Node.js binary was compiled.
+ Possible values are:
+     - &apos;BE&apos; for big endian
+     - &apos;LE&apos; for little endian.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.cpus">
+<summary>
+ The os.cpus() method returns an array of objects containing information about each CPU/core installed.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.OS.IExports.arch">
+<summary>
+ The os.arch() method returns a string identifying the operating system CPU architecture for which the Node.js binary was compiled.
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Process.Process.getuid">
+<summary>
+ The process.getuid() method returns the numeric user identity of the process. (See getuid(2).)
+</summary>
+</member>
+<member name="M:Fable.Import.Node.Process.Process.geteuid">
+<summary>
+ The process.geteuid() method returns the numerical effective user identity of the process. (See geteuid(2).)    
+</summary>
+</member>
+</members>
+</doc>

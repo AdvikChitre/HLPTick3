@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/Fable.Browser.WebStorage.nuspec" Id="R802122D33A419117" />
+  <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/package/services/metadata/core-properties/a4ec7298d29d428bb9444eb5333a11b3.psmdcp" Id="RCBA78C5CEB012B0D" />
+</Relationships>

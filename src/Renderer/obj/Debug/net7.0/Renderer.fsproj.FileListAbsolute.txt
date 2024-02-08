@@ -1,0 +1,6 @@
+/Users/advik/Documents/imperial/HLP/issie/src/Renderer/bin/Debug/net7.0/Renderer.deps.json
+/Users/advik/Documents/imperial/HLP/issie/src/Renderer/obj/Debug/net7.0/Renderer.AssemblyInfoInputs.cache
+/Users/advik/Documents/imperial/HLP/issie/src/Renderer/obj/Debug/net7.0/Renderer.AssemblyInfo.fs
+/Users/advik/Documents/imperial/HLP/issie/src/Renderer/obj/Debug/net7.0/Renderer.dll
+/Users/advik/Documents/imperial/HLP/issie/src/Renderer/obj/Debug/net7.0/refint/Renderer.dll
+/Users/advik/Documents/imperial/HLP/issie/src/Renderer/obj/Debug/net7.0/Renderer.pdb

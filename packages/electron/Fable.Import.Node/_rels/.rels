@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/Fable.Import.Node.nuspec" Id="Re411e793f8d34a3c" />
+  <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/package/services/metadata/core-properties/5cc695460fa1499b93b85dee9a594f5f.psmdcp" Id="R1edc5a70ea3c4952" />
+</Relationships>

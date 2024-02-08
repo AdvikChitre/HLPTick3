@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/Fable.Elmish.HMR.nuspec" Id="R0A28DAA63BD75424" />
+  <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/package/services/metadata/core-properties/e6e9988602ae4e009f04df6010faafe8.psmdcp" Id="RCB3988DF9A97AA63" />
+</Relationships>

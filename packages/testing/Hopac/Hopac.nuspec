@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Hopac</id>
+    <version>0.5.1</version>
+    <authors>Vesa Karvonen</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/Hopac/Hopac</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/10173903</iconUrl>
+    <description>Hopac is a library for higher-Order, parallel, asynchronous and concurrent programming in F#.
+
+Inspired by languages like Concurrent ML and Cilk, Hopac is a library for F# with the aim of making it easier to write efficient parallel, asynchronous, concurrent and reactive programs. Hopac is licensed under a MIT-style license. See project website for further information.</description>
+    <copyright>© 2016 Vesa Karvonen, 2018 Open Source Contributors</copyright>
+    <tags>F# documentation fsi html</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.5.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

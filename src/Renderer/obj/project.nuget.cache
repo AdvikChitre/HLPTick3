@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "DQz5Bt7wOvn0zdNvbq35tGcON9qLRmtabz4ReY/wwnlU6YyiaE9GC6lRsjlpFj+I0FM70yia/iqwKjx8H/eDuA==",
+  "success": true,
+  "projectFilePath": "/Users/advik/Documents/imperial/HLP/HLPTick3/src/Renderer/Renderer.fsproj",
+  "expectedPackageFiles": [
+    "/Users/advik/.nuget/packages/fsharp.core/7.0.403/fsharp.core.7.0.403.nupkg.sha512",
+    "/Users/advik/.nuget/packages/microsoft.netcore.app.runtime.win-x64/7.0.15/microsoft.netcore.app.runtime.win-x64.7.0.15.nupkg.sha512",
+    "/Users/advik/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/7.0.15/microsoft.netcore.app.runtime.linux-x64.7.0.15.nupkg.sha512",
+    "/Users/advik/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/7.0.15/microsoft.aspnetcore.app.runtime.win-x64.7.0.15.nupkg.sha512",
+    "/Users/advik/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/7.0.15/microsoft.aspnetcore.app.runtime.linux-x64.7.0.15.nupkg.sha512",
+    "/Users/advik/.nuget/packages/microsoft.netcore.app.host.win-x64/7.0.15/microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512",
+    "/Users/advik/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.15/microsoft.netcore.app.host.linux-x64.7.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Expecto.BenchmarkDotNet</name></assembly>
+<members>
+<member name="M:Expecto.BenchmarkDotNetModule.benchmark``1(BenchmarkDotNet.Configs.IConfig,Microsoft.FSharp.Core.FSharpFunc{BenchmarkDotNet.Reports.Summary,System.Object})">
+<summary>
+ Run a performance test: pass the annotated type as a type param
+ to this function call. Pass &apos;benchmarkConfig&apos; as the config parameter –
+ because this is a record, you can change it to suit your liking.
+ NOTE: Now needs to be manually put in a testCase.
+</summary>
+</member>
+</members>
+</doc>

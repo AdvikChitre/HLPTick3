@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Fable.Elmish.HMR</id>
+    <version>5.2.0</version>
+    <authors>Maxime Mangel</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/elmish/hmr</projectUrl>
+    <description>Hot Module Replacement for Elmish apps</description>
+    <tags>fable elmish fsharp hmr</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.7.2" exclude="Build,Analyzers" />
+        <dependency id="Fable.Core" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Fable.Elmish.Browser" version="3.0.4" exclude="Build,Analyzers" />
+        <dependency id="Fable.Elmish.React" version="3.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Thoth.Json.Net</id>
+    <version>11.0.0</version>
+    <authors>Maxime Mangel</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://thoth-org.github.io/Thoth.Json/</projectUrl>
+    <description>Elm-inspired encoder and decoder for JSON targetting .Net and NetCore runtime</description>
+    <releaseNotes>### Fixed
+
+* * Guard `decodeMaybeNull` to evaluates the `decoder` only if the value is not `null`</releaseNotes>
+    <tags>fable fable-library fable-dotnet fsharp json</tags>
+    <repository type="git" url="https://github.com/thoth-org/Thoth.Json.Net" commit="ee5b1fbe98605981231edfce85038ed30462a3dc" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="FSharp.Core" version="4.7.2" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.7.2" exclude="Build,Analyzers" />
+        <dependency id="Fable.Core" version="3.1.6" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

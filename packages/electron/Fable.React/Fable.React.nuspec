@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Fable.React</id>
+    <version>8.0.1</version>
+    <authors>Fable contributors</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>fable_logo.png</icon>
+    <projectUrl>https://fable.io/</projectUrl>
+    <description>Package Description</description>
+    <tags>fsharp fable javascript f# js react</tags>
+    <repository type="git" url="https://github.com/fable-compiler/fable-react" commit="19c3e0b3f4cc13e1e21f59a7839bb5fb23121570" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="4.7.2" exclude="Build,Analyzers" />
+        <dependency id="Fable.Browser.Dom" version="2.4.4" exclude="Build,Analyzers" />
+        <dependency id="Fable.Core" version="3.2.7" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
